@@ -1,0 +1,105 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-인재상</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>인재채용</h3>
+            <p>RECRUIT</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub3_1.html">인재상</a></li>
+                <li><a href="./sub3_2.html">인사제도</a></li>
+                <li><a href="./sub3_3.html">직무소개</a></li>
+                <li><a href="./sub3_4.html">채용FAQ</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   인재채용   &gt;   <strong>인재상</strong></p>
+                </div>
+                <h2>인재상</h2>
+            </div>
+
+            <div class="content_area">
+                <p>
+                    50여년 간 대한민국 산업발전의 파트너로 함께 성장해 왔고, 현재 소재 혁신의 최전선에서 글로벌 석유화학그룹으로 
+                    앞장선 금호석유화학에서 꿈, 의지, 열정을 펼치며
+                    현실에 안주하지 않고 끊임없는 도전을 통해 세계시장을 선도할
+                    <span>글로벌 리더</span>를 모집합니다.</p>
+                <div class="pursuit">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>Collaboration</dt>
+                                <dd>열린 마음을 가진 조화로운 사람</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Responsibility</dt>
+                                <dd>올바른 가치관을 겸비한 사람</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Passion</dt>
+                                <dd>끊임없이 도전하는 사람</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>Innovation</dt>
+                                <dd>창조적 변화를 추구하는 사람</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <img src="./images/content1/down_arrow.png" alt="아래화살표 이미지">
+                    <img src="./images/content1/down_arrow.png" alt="아래화살표 이미지">
+                    <img src="./images/content1/down_arrow.png" alt="아래화살표 이미지">
+                    <p>GLOBAL LEADER</p>
+                </div>
+                <div class="process">
+                    <h3>채용절차</h3>
+                    <ul>
+                        <li>1. 서류전형<i class="fas fa-chevron-right right1"></i><span class="hidden">오른쪽 화살표</span></li>
+                        <li>2. 인적성검사<i class="fas fa-chevron-right right2"></i><span class="hidden">오른쪽 화살표</span></li>
+                        <li>3. 1차면접<i class="fas fa-chevron-right right3"></i><span class="hidden">오른쪽 화살표</span><span>- 역량면접</span></li>
+                        <li>4. 2차면접<i class="fas fa-chevron-right right4"></i><span class="hidden">오른쪽 화살표</span><span>- 인성면접</span></li>
+                        <li>5. 건강검진<i class="fas fa-chevron-right right5"></i><span class="hidden">오른쪽 화살표</span></li>
+                        <li>6. 최종합격자 발표</li>
+                    </ul>
+                    <p>· 전형단계 및 일정은 변경될 수 있으며, 상세일정은 전형별 합격자에 한하여 개별 안내드리고 있습니다.</p>
+                    <p>· 신입/경력연구원의 경우 1차 면접이 PT발표 형태로 진행됩니다.</p>
+                </div>
+            </div>
+        </article>
+
+           
+        <? include "../common/sub_footer.html" ?>
+</body>
+</html>

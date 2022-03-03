@@ -1,0 +1,183 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 130px;}
+#content .content_area>p {font-size: 1.625em; line-height: 1.5em; text-align: justify; 
+    width: 1100px; margin: 0 auto; text-align: center; margin-bottom: 130px;}
+
+/* responsiveGallery */
+
+.best_pr {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.best_pr a{text-decoration: none;}
+
+.best_pr .best_pr_inner {
+    margin-bottom: 200px;
+    height: 600px;
+}
+
+
+.best_pr li {
+    float: left;
+    margin: 0 30px 0 0
+}
+
+.best_pr dl {
+    text-align: center;
+}
+
+.best_pr dt {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .3s ease-out;
+}
+
+.best_pr a:hover dt {
+    color: #ed1c24;
+}
+
+.best_pr dd {
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 16px;
+}
+
+.best_pr .left {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    color: #999;
+    font-size: 30px;
+}
+
+.best_pr .right {
+    position: absolute;
+    top: 300px;
+    right: 30px;
+    color: #999;
+    font-size: 30px;
+}
+
+
+/*responsiv 3D gallery*/
+.responsiveGallery-container {
+    width: 100%;
+    position: relative;
+}
+
+.responsiveGallery-btn {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    display: block;
+    width: 5%;
+    height: 100%;
+}
+
+.responsiveGallery-btn_prev {
+    background: url(../images/content4/arrow-left.png) center center no-repeat;
+    left: 1%;
+    transition: all .2s ease-out;
+}
+.responsiveGallery-btn_prev:hover {
+    left: 0;
+}
+
+.responsiveGallery-btn_next {
+    background: url(../images/content4/arrow-right.png) center center no-repeat;
+    right: 1%;
+    transition: all .2s ease-out;
+}
+.responsiveGallery-btn_next:hover {
+    right: 0;
+}
+
+.responsiveGallery-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.responsiveGallery-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    display: block;
+    width: 20%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+    .responsiveGallery-item {
+        width: 33.33%;
+    }
+
+    .responsiveGallery-wrapper {
+        padding-top: 45%;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .responsiveGallery-wrapper {
+        width: 60%;
+    }
+
+    .responsiveGallery-item {
+        width: 100%;
+    }
+
+    .responsiveGallery-wrapper {
+        padding-top: 80%;
+    }
+
+    .responsiveGallery-btn {
+        width: 8%;
+    }
+}
+
+.responsivGallery-link {
+    display: block;
+    width: 100%;
+
+}
+
+.responsivGallery-pic {
+    width: 100%;
+    height: auto;
+}
+
+.w-responsivGallery-info {
+    width: 80%;
+    margin: 0 10px 0 40px;
+    padding-top: 5%;
+    text-align: center;
+    color: #333;
+}
+
+.responsivGallery-name {
+    font-size: 1.25em;
+}
+
+.responsivGallery-position {
+    padding-top: 4%;
+    font-size: 0.875em;
+    line-height: 1.3;
+}
+
+/*responsiv 3D gallery end*/

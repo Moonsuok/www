@@ -1,0 +1,110 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-CEO인사말</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>회사소개</h3>
+            <p>COMPANY INTRODUCTION</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub1_1.html">회사개요</a></li>
+                <li class="current"><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="./sub1_4.html">재무정보</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   회사소개   &gt;   <strong>CEO인사말</strong></p>
+                </div>
+                <h2>CEO 인사말</h2>
+            </div>
+
+            <div class="content_area">
+               <div class="top_con">
+                    <div class="welcome_box">
+                        <p>from. CEO</p>
+                        <span>금호석유화학에 대한 <br>변함없는 관심과 성원에<br>감사드립니다.</span>
+                    </div>
+                    <img src="./images/content2/kumho_ceo.jpg" alt="금호석유화학 대표이사 부사장 백종훈">
+               </div>
+               <div class="bottom_con">
+                   <p><b>존경하는 이해관계자 여러분,</b>
+                    안녕하세요. 금호석유화학 대표이사 부사장 백종훈입니다. </p>
+                    <p>금호석유화학은 1970년 창사 이후 <span>합성고무, 합성수지, 정밀화학, CNT, 에너지, 건자재</span>를 아우르는 
+                    사업 포트폴리오 구축을 통해 <span>글로벌 석유화학 기업</span>으로 성장하였습니다.</p>
+
+                    <p>작년 한 해는 COVID-19 바이러스로 인한 여러가지 사회적인 제약과 변화로 모두가 힘든 시간이었습니다. 그럼에도
+                    불구하고 이 위기를 기회로 만들어 가며, 2020년 연결기준 매출액 4조 8,095억 원, 영업이익 7,421억 원으로 최고의 실적을
+                    달성하였습니다. 이는 글로벌 팬데믹의 위기 상황에서도 적극적인 영업활동과 원가 개선으로 경쟁력을 강화하고, 선제적인
+                    생산라인 증설 및 설비 개선 등을 통해 시장 환경과 수요 변화에 앞서 대처한 노력의 결과라고 생각합니다. 이러한 성과는
+                    재무안정성 향상으로도 이어졌습니다. 2010년 분리경영 당시 부채비율 498%에서 2019년 72.7%, 2020년 59.7%로
+                    대폭 감소되었으며, 유동비율도 140.9%로 크게 향상되는 등 지속성장을 위한 재무 기반을 더욱 안정화하였습니다.</p>
+
+                    <p>금호석유화학은 작년의 성과에 만족하지 않고 지속가능한 기업으로서의 새로운 반세기를 시작하기 위해 다음과 같은
+                        전략을 올 한해 추진하고자 합니다.</p>
+
+                    <p><i>첫째, 급속하게 변화하는 사회 경제적 패러다임 전환에 대비하겠습니다.</i>
+                        글로벌 시장은 현재 COVID-19 이후 가속화되고 있는 디지털 전환과 함께 탄소 중립, 그린뉴딜 등 친환경 에너지로의 급속한
+                        전환을 맞이하고 있습니다. 이에 대비하여 금호석유화학 또한 디지털 전환에 뒤쳐지지 않도록 전략과 조직, 프로세스를
+                        구축하겠습니다. 또한, 탄소 순환 경제로의 전환을 위해 지속가능한 친환경 혁신 기술을 도입하고 그에 따른 전략방향을
+                        수립하겠습니다.
+                    </p>
+                    
+                    <p><i>둘째, 사업포트폴리오를 강화하고 지속가능경영 체계 구축을 통해 성장 잠재력을 확보하겠습니다. </i>
+                        선택과 집중을 통한 선제적인 투자로 기존 사업의 경쟁력을 강화하고 지속적으로 선도사업을 확보하겠습니다. 이를 위해
+                        우선적으로 실현 가능한 항목을 발굴하여 실행력을 제고하고 미래 경쟁력 확보 기반을 마련하겠습니다. 또한, ESG경영 환경
+                        속에서 차별적 가치 창출 전략을 수립하여 지속가능한 경영 체계를 구축하겠습니다.
+                    </p>
+
+                    <p><i>셋째, 창립 50주년을 맞아 작년말 새롭게 선포한 New Vision, ‘화학 그 이상의 가치로 공동의 미래를
+                        창조하는 솔루션 파트너’의 실현을 준비하겠습니다. </i>
+                        이를 위해 6대 핵심 실행 과제를 선정하고 실천함과 동시에 뉴비전 달성을 위한 중장기 성장전략 추진(2025년 매출액
+                        9조 원 목표)을 가속화하겠습니다. Core 사업에 집중하고, 차세대 신사업 육성을 위해 대규모 투자도 적극 추진해
+                        나가겠습니다.
+                    </p>
+
+                    <p>또한 2021년은 금호석유화학이 새로운 50년의 첫 걸음을 내딛는 해입니다. 이를 위해 회사는 올해 경영 방침을 ‘N.EX.T
+                        MOVE’로 정했습니다. ‘New(혁신)’, ‘EXperience(경험)’, ‘Together(모두와 함께)’를 함축한 문구로, 지난 50년의 경험을
+                        바탕으로 임직원과 함께 변화와 혁신을 실천하며 New Normal 시대의 Leading Company로의 도약을 준비하겠습니다.
+                        또한 지난 50년을 이어온 우리의 저력과 새롭게 선포된 Vision을 바탕으로 다가오는 50년을 이끌 지속가능한 기업을
+                        만들어 가겠습니다.
+                    </p>
+                    
+                    <p>앞으로도 이해관계자 여러분들의 많은 기대와 관심을 부탁드립니다.</p>
+                    
+                    <p>감사합니다.</p>
+                    
+                    <p>금호석유화학주식회사 대표이사 부사장<strong> 백종훈</strong></p>
+               </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+</body>
+</html>

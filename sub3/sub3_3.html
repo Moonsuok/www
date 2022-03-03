@@ -1,0 +1,132 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-직무소개</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>인재채용</h3>
+            <p>RECRUIT</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub3_1.html">인재상</a></li>
+                <li><a href="./sub3_2.html">인사제도</a></li>
+                <li class="current"><a href="./sub3_3.html">직무소개</a></li>
+                <li><a href="./sub3_4.html">채용FAQ</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   인재채용   &gt;   <strong>직무소개</strong></p>
+                </div>
+                <h2>직무소개</h2>
+            </div>
+
+            <div class="content_area">
+                <ul class="sub_tap">
+                    <li><a class="tab" href="#">생산/연구</a></li>
+                    <li><a class="tab" href="#">영업/관리</a></li>
+                </ul>
+                <div class="task">
+                    <h3>생산/연구 직무소개</h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>생산관리<span>Production Management</span></dt>
+                                <dd>생산계획수립, 원료수급, 생산인력 및 재고관리</dd>
+                            </dl>
+                            <img src="./images/content3/task_1.jpg" alt="생산관리직무 이미지">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>품질관리<span>Quality Assurance</span></dt>
+                                <dd>품질정책수립, 고객요구사항 파악 및 품질개선</dd>
+                            </dl>
+                            <img src="./images/content3/task_2.jpg" alt="품질관리직무 이미지">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>환경안전<span>Environment Safety</span></dt>
+                                <dd>환경안전법규 검토, 환경관리 목표설정, 사고예방 계획수립 및 안전교육</dd>
+                            </dl>
+                            <img src="./images/content3/task_3.jpg" alt="환경안전직무 이미지">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>공무<span>Mill Furnishings</span></dt>
+                                <dd>공장설비 유지보수 및 개선, 신규증설</dd>
+                            </dl>
+                            <img src="./images/content3/task_4.jpg" alt="공무직무 이미지">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>연구<span>Research</span></dt>
+                                <dd>연구과제 발굴 및 기획, 중장기 R&D 전략 수립 및 실행</dd>
+                            </dl>
+                            <img src="./images/content3/task_5.jpg" alt="연구직무 이미지">
+                        </li>
+                    </ul>
+                </div>
+                <div class="task">
+                    <h3>영업/관리 직무소개</h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>영업<span>Business</span></dt>
+                                <dd>국내 및 해외영업, 판매전략 수립, 신규고객 발굴, 시장조사 및 동향분석, 채권 및 대리점 관리</dd>
+                            </dl>
+                            <img src="./images/content3/task_6.jpg" alt="영업직무 이미지">
+                        </li>                        
+                        <li>
+                            <dl>
+                                <dt>경영관리<span>Business Management</span></dt>
+                                <dd>기획, 인사, 총무, 구매, 회계, 자금, 물류, 업무지원</dd>
+                            </dl>
+                            <img src="./images/content3/task_7.jpg" alt="경영관리직무 이미지">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>IT<span>Information Technology</span></dt>
+                                <dd>IT기획, 그룹웨어 및 ERP 시스템 운영, IT 인프라 운영</dd>
+                            </dl>
+                            <img src="./images/content3/task_8.jpg" alt="IT직무 이미지">
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>법무<span>Judicial Affairs</span></dt>
+                                <dd>법적 리스크 진단 및 법률문제 대응</dd>
+                            </dl>
+                            <img src="./images/content3/task_9.jpg" alt="법무직무 이미지">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/tab.js"></script>
+</body>
+</html>

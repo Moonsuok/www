@@ -1,0 +1,377 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-연혁</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>회사소개</h3>
+            <p>COMPANY INTRODUCTION</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub1_1.html">회사개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li class="current"><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="./sub1_4.html">재무정보</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   회사소개   &gt;   <strong>연혁</strong></p>
+                </div>
+                <h2>연혁</h2>
+            </div>
+
+            <div class="content_area">
+                <ul class="sub_tab">
+                    <li><a href="#">기업연혁</a></li>
+                    <li><a href="#">기업수상</a></li>
+                </ul>
+
+                <div class="sub sub1">
+                    <h3>기업연혁</h3>
+                    <div class="navBox">
+                        <ul class="year_tab horizon_tab">
+                            <li><a href="#">2010~현재</a></li>
+                            <li><a href="#">2000s</a></li>
+                            <li><a href="#">1990s</a></li>
+                            <li><a href="#">1980s</a></li>
+                            <li><a href="#">1970s</a></li>
+                        </ul>
+                    </div>
+                    <div class="history_box history_box1">
+                        <ul>
+                            <li>
+                                <p>2010~현재</p>
+                                <dl>
+                                    <dt>2016</dt>
+                                    <dd>08&#12288;㈜강원학교태양광 지분 인수</dd>
+                                    <dd>07&#12288;여수제3에너지 준공</dd>
+                                    <dd>06&#12288;영광백수풍력발전㈜ 계열 편입</dd>
+                                    <dd>04&#12288;여수제2에너지 증설 준공</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2015</dt>
+                                    <dd>상해금호일려소료유한공사 금산공장 준공&#12288;10</dd>
+                                    <dd>철도솔라㈜ 계열 편입&#12288;08</dd>
+                                    <dd>여수페트로㈜ 계열 편입&#12288;02</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2013</dt>
+                                    <dd>12&#12288;탄소나노튜브 공장 상업생산 개시</dd>
+                                    <dd>10&#12288;탄소나노튜브 공장 준공</dd>
+                                    <dd>08&#12288;코리아에너지발전소㈜ 계열 편입</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2012</dt>
+                                    <dd>금호석유화학그룹, 본사 이전(수표동 시그니처타워)&#12288;09</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2011</dt>
+                                    <dd>12&#12288;30억불 수출의 탑 수상</dd>
+                                    <dd>03&#12288;예산 건자재공장 준공(건자재 사업)</dd>
+                                    <dd><strong>02&#12288;여수고무제2공장 준공</strong></dd>
+                                    <dd class="img1"><img src="./images/content3/sub1_3_1.jpg" alt="여수고무제2공장"></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>2009~2000</p>
+                                <dl>
+                                    <dt>2009</dt>
+                                    <dd>금호티앤엘(주) 설립&#12288;09</dd>
+                                    <dd>광동금호일려고분자재료유한공사 설립&#12288;09</dd>
+                                    <dd>여수 제2열병합발전소 가동&#12288;06</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2008</dt>
+                                    <dd>12&#12288;20억불 수출의 탑 수상</dd>
+                                    <dd>03&#12288;금호석화심양유한공사(XPS)설립</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2007</dt>
+                                    <dd>미국 샬럿사무소 개소&#12288;07</dd>
+                                    <dd>중국 칭다오사무소 개소&#12288;06</dd>
+                                    <dd>일조금호금마화학유한공사 설립&#12288;06</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2006</dt>
+                                    <dd>10&#12288;남경금포금호화공유한공사 설립</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2005</dt>
+                                    <dd>10억불 수출의 탑 수상&#12288;11</dd>
+                                    <dd>금호개발상사 금호석유화학그룹 편입&#12288;11</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2004</dt>
+                                    <dd>10&#12288;여수 SSBR 상업생산 개시</dd>
+                                    <dd>06&#12288;여수 NdBR 생산설비 신설</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2003</dt>
+                                    <dd>여수 열병합발전소 가동&#12288;12</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2002</dt>
+                                    <dd>12&#12288;중국 광저우사무소 개소</dd>
+                                    <dd>02&#12288;독일 프랑크푸르트사무소 개소</dd>
+                                    <dd>01&#12288;금호몬산토(주) 흡수합병 (정밀화학 사업)</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2001</dt>
+                                    <dd>금호케미칼(주) 흡수합병&#12288;01</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>2000</dt>
+                                    <dd>10&#12288;상해금호일려소료유한공사 설립</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>1999~1990</p>
+                                <dl>
+                                    <dt>1998</dt>
+                                    <dd>아산 전자화학공장 및 연구소 준공(전자소재 사업)&#12288;10</dd>
+                                    <dd>여수 SBS 생산시설 준공&#12288;04</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1997</dt>
+                                    <dd>12&#12288;미국 샌디에이고사무소 개소</dd>
+                                    <dd>09&#12288;중국 상해사무소 개소</dd>
+                                    <dd><strong>07&#12288;여수 열병합발전소 준공(에너지 사업)</strong></dd>
+                                    <dd>05&#12288;미원유화, 금호케미칼(주)로 상호 변경(합성수지 사업)</dd>
+                                    <dd class="img2"><img src="./images/content3/sub1_3_2.jpg" alt="여수 열병합발전소 준공"></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1994</dt>
+                                    <dd>열가소성 탄성체(SBS)개발&#12288;08</dd>
+                                    <dd>대전 금호석유화학연구소 완공 및 이전&#12288;04</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1993</dt>
+                                    <dd>07&#12288;인도네시아 자카르타사무소(첫 해외사무소) 개소</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1992</dt>
+                                    <dd>울산 BD 공장 가동&#12288;04</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>1989~1980</p>
+                                <dl>
+                                    <dt>1989</dt>
+                                    <dd>10&#12288;울산 다목적 SBR-LATEX 공장 가동</dd>
+                                    <dd>03&#12288;금호미쓰이화학(주)설립</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1988</dt>
+                                    <dd>여수 다목적 BR 공장 가동&#12288;11</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1987</dt>
+                                    <dd>12&#12288;금호석유화학(주) 기업공개(IPO)</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1985</dt>
+                                    <dd>금호폴리켐(주) 설립&#12288;06</dd>
+                                    <dd>금호석유화학연구소 설립&#12288;06</dd>
+                                    <dd>한국합성고무공업(주)와 금호화학(주) 합병, 금호석유화학(주)로 상호 변경&#12288;06</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1983</dt>
+                                    <dd>12&#12288;울산 NBR 생산 개시</dd>
+                                    <dd>12&#12288;울산 SBR-LATEX 생산 개시</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1982</dt>
+                                    <dd>울산 HSR 생산 개시&#12288;08</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1980</dt>
+                                    <dd>06&#12288;여수 BR 공장 가동</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>1979~1970</p>
+                                <dl>
+                                    <dt>1979</dt>
+                                    <dd>여수 BD 공장 가동&#12288;10</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1976</dt>
+                                    <dd>12&#12288;금호피앤비화학(주)설립</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1973</dt>
+                                    <dd>울산 SBR 공장 가동&#12288;12</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>1970</dt>
+                                    <dd><strong>12&#12288;한국합성고무공업(주) 설립</strong></dd>
+                                    <dd class="img3"><img src="./images/content3/sub1_3_3.jpg" alt="한국합성고무공업(주) 설립"></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub sub2">
+                    <h3>기업수상</h3>
+                    <div class="navBox">
+                        <ul class="horizon_tab grade_tab">
+                            <li><a class="link6" href="#">본사</a></li>
+                            <li><a class="link7" href="#">중앙연구소</a></li>
+                            <li><a class="link8" href="#">울산고무공장</a></li>
+                            <li><a class="link9" href="#">울산수지공장</a></li>
+                            <li><a class="link10" href="#">여수고무공장</a></li>
+                        </ul>
+                    </div>
+                    <div class="history_box history_box2">
+                        <ul>
+                            <li>
+                                <p class="head_office">본사수상</p>
+                                <dl>
+                                    <dt>본사</dt>
+                                    <dd>2010.11&#12288;노사문화대상 / 고용노동부장관상</dd>
+                                    <dd>2009.09&#12288;사회복지의 날 서울특별시장 표창</dd>
+                                    <dd>2008.12&#12288;노사화합대상 / 대통령표창</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p class="center_lab">중앙연구소 수상</p>
+                                <dl>
+                                    <dt>중앙연구소</dt>
+                                    <dd>올해의 녹색기술-저탄소 중온 아스팔트 포장기술(LEADCAP)&#12288;2011.11</dd>
+                                    <dd>국가녹색기술대상/국토해양부장관상-저탄소 중온 아스팔트 포장기술&#12288;2011.11</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p class="ulsan_rub">울산고무공장 수상</p>
+                                <dl>
+                                    <dt>울산고무공장</dt>
+                                    <dd>2013.11&#12288;자체소방대/장관상</dd>
+                                    <dd>2013.06&#12288;행복나눔인 포상 / 보건복지부 장관상</dd>
+                                    <dd>2008.11&#12288;대한민국안전대상/ 대통령상</dd>
+                                    <dd>2006.11&#12288;가스안전유공자 표창/ 울산광역시장상</dd>
+                                    <dd>2006.10&#12288;자연환경보전공로 표창/ 울산광역시장상</dd>
+                                    <dd>2004.06&#12288;국가환경경영대상/ 청정생산부문</dd>
+                                    <dd>2002.10&#12288;대한민국 안전대상/ 국무총리상</dd>
+                                    <dd>2000.12&#12288;안전경영대상</dd>
+                                    <dd>1996.12&#12288;무재해 동탑</dd>
+                                    <dd>1996.07&#12288;산업재해대상 우수사업장/ 대통령상</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p class="ulsan_resin">울산수지공장 수상</p>
+                                <dl>
+                                    <dt>울산수지공장</dt>
+                                    <dd>전국녹색기업워크숍 녹색경영우수사례 발표대회 / 환경부 장관상&#12288;2010.07</dd>
+                                    <dd>울산산업대상(단체) / 지역사회 공헌부문&#12288;2007.10</dd>
+                                    <dd>가스안전 유공자상/ 울산광역시장상&#12288;2007.09</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p class="yeosu_rub">여수고무공장 수상</p>
+                                <dl>
+                                    <dt>여수고무공장</dt>
+                                    <dd>2012.09&#12288;재난대응 응급처치 경연 전국대회/ 특별상</dd>
+                                    <dd>2010.06&#12288;무재해 11배 달성패</dd>
+                                    <dd>2008.06&#12288;국가환경경영대상/ 국무총리상</dd>
+                                    <dd>2007.06&#12288;환경친화우수기업</dd>
+                                    <dd>2006.12&#12288;전라남도 산업평화상 / 대상</dd>
+                                    <dd>2006.06&#12288;가스안전관리대상/ 국무총리상</dd>
+                                    <dd>2006.06&#12288;국가환경경영대상 최우수상/ 온실가스부문</dd>
+                                    <dd>2004.06&#12288;환경관리 유공기업</dd>
+                                    <dd>2004.06&#12288;국가환경친화경영대상 최우수상</dd>
+                                    <dd>2003.06&#12288;환경경영대상 대상/ 화학공업부문</dd>
+                                    <dd>2002.01&#12288;여수산단 안전관리 최우수업체</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </article>
+
+        
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/history.js"></script>
+        
+        <!-- <script src="./js/tab.js"></script>
+        <script src="./js/slide.js"></script>
+        <script src="./js/sticky2.js"></script> -->
+</body>
+</html>

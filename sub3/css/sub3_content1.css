@@ -1,0 +1,92 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+@keyframes down_arrow1 {
+    0% {transform: translateY(25px); opacity: 10%;} 
+    100% {transform: translateY(45px); opacity: 30%;}
+}
+@keyframes down_arrow2 {
+    0% {transform: translateY(10px); opacity: 30%;} 
+    100% {transform: translateY(30px); opacity: 70%;}
+}
+@keyframes down_arrow3 {
+    0% {transform: translateY(-5px); opacity: 50%;} 
+    100% {transform: translateY(15px); opacity: 100%;}
+}
+
+@keyframes right_arrow {
+    0% {transform: translateX(0); opacity: 10%;} 
+    100% {transform: translateX(10px); opacity: 70%;}
+}
+
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px;}
+#content .content_area>p {font-size: 1.625em; line-height: 1.5em; text-align: justify; 
+    width: 1100px; margin: 0 auto;}
+#content .content_area>p span {color: #ed1c24;}
+
+#content h3 {font-size: 2.5em; position: relative; margin-bottom: 60px;}
+#content h3::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -8px;}
+
+#content .pursuit {margin: 130px 0 200px; width: 1200px; }
+#content .pursuit ul {overflow: hidden; width: 650px; margin: 0 auto; position: relative;}
+#content .pursuit ul::before {content: ''; width: 3px; height: 600px; position: absolute; top: 0; left: 325px;
+    background: #ccc; transition: all .3s ease-in; transform: scaleY(.1); opacity: 0;}
+#content .pursuit:hover ul::before {transform: scaleY(1); opacity: 1;}
+#content .pursuit ul::after {content: ''; width: 650px; height: 3px; position: absolute; top: 300px; left: 0;
+    background: #ccc; transition: all .3s ease-in; transform: scaleX(.1); opacity: 0;}
+#content .pursuit:hover ul::after {transform: scaleX(1); opacity: 1;}
+#content .pursuit ul li {float: left; width: 300px; height: 300px; text-align: center; position: relative;}
+#content .pursuit ul li:nth-child(odd) {margin-right: 50px;}
+#content .pursuit ul li:nth-of-type(1) {background: url(../images/content1/pursuit_1.png) center 20% no-repeat;}
+#content .pursuit ul li:nth-of-type(2) {background: url(../images/content1/pursuit_2.png) center 20% no-repeat;}
+#content .pursuit ul li:nth-of-type(3) {background: url(../images/content1/pursuit_3.png) center 20% no-repeat;}
+#content .pursuit ul li:nth-of-type(4) {background: url(../images/content1/pursuit_4.png) center 20% no-repeat;}
+
+#content .pursuit ul li dl {width: 250px; position: absolute; top: 70%; left: 50%; margin-left: -125px;}
+#content .pursuit ul li dl dt {font-size: 1.5em; font-weight: 700; position: relative;}
+#content .pursuit ul li dl dt::before {content: ''; width: 0; height: 10px; bottom: 0; left: 50%; 
+    margin-left: -75px; position: absolute; transition: all .2s ease-out; opacity: 0;
+    background: linear-gradient(to top, rgb(237, 28, 36, .5) 50%, transparent 90%); }
+#content .pursuit ul li:hover dl dt::before {width: 150px; opacity: 1;}
+#content .pursuit ul li dl dd {margin-top: .6em; font-size: 1em;}
+
+#content .pursuit img {display: block; margin: 0 auto; }
+#content .pursuit img:nth-of-type(1) {animation-name: down_arrow1; animation-duration: 2s; 
+    animation-iteration-count: infinite; transition: ease;}
+#content .pursuit img:nth-of-type(2) {animation-name: down_arrow2; animation-duration: 2s; 
+    animation-iteration-count: infinite; transition: ease;}
+#content .pursuit img:nth-of-type(3) {animation-name: down_arrow3; animation-duration: 2s; 
+    animation-iteration-count: infinite; transition: ease;}
+
+#content .pursuit p {text-align: center; font-weight: 700; font-size:2em; margin: 60px 0;
+    position: relative;}
+#content .pursuit p::before {content: ''; width: 240px; height: 10px; 
+    bottom: -5px; left: 50%; margin-left: -120px; position: absolute; 
+    background: linear-gradient(to top, rgb(237, 28, 36, .5) 50%, transparent 90%); }
+
+
+
+#content .process ul {overflow: hidden;}
+#content .process ul li {float: left; width: 16.66%; height: 220px; text-align: center; 
+    font-size: 1.25em; position: relative;}
+#content .process ul li span {display: block; color: #999; font-size: 16px;}
+#content .process ul li:nth-of-type(1) {background: url(../images/content1/progress1.png) center no-repeat; 
+background-size: 40%;}
+#content .process ul li:nth-of-type(2) {background: url(../images/content1/progress2.png) center no-repeat; 
+background-size: 40%;}
+#content .process ul li:nth-of-type(3) {background: url(../images/content1/progress3.png) center no-repeat; 
+background-size: 40%;}
+#content .process ul li:nth-of-type(4) {background: url(../images/content1/progress4.png) center no-repeat; 
+background-size: 40%;}
+#content .process ul li:nth-of-type(5) {background: url(../images/content1/progress5.png) center no-repeat; 
+background-size: 40%;}
+#content .process ul li:nth-of-type(6) {background: url(../images/content1/progress6.png) center no-repeat; 
+background-size: 40%;}
+#content .process i {display: block; font-size: 2.5em; position: absolute; top: 30px; right: 0; color: #ed1c24;
+    animation-name: right_arrow; animation-duration: 2s; animation-iteration-count: infinite; transition: ease-out;}
+#content .process .right1 {animation-delay: 0s;}
+#content .process .right2 {animation-delay: .4s;}
+#content .process .right3 {animation-delay: .8s;}
+#content .process .right4 {animation-delay: 1.2s;}
+#content .process .right5 {animation-delay: 1.6s;}
+#content .process p {color: #333; font-size: 0.875em;}
+

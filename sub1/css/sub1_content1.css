@@ -1,0 +1,32 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px;}
+#content .content_area>p {font-family: 'Nanum Myeongjo', serif; font-size: 1.625em; line-height: 1.5em;
+    width: 520px; text-align: center; margin: 0 auto;}
+
+.content_area ul li {position: relative; width: 100%; opacity: 0; transition: all 1s ease-out;}
+.content_area ul li::after {content: ''; width: 2000px; height: 396px; background: #f9f9f9;
+    position: absolute; left: -400px; top: 270px; z-index: -1;}
+.content_area ul li:nth-of-type(odd) {left: 1200px;}
+.content_area ul li:nth-of-type(even) {right: 1200px;}
+
+.content_area dl {overflow: hidden;}
+.content_area dl dt {font-size: 32px; margin: 130px 0 34px 0; position: relative;}
+.content_area dl dt::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: -8px; bottom: -8px;}
+.content_area dl dd {width: 550px; font-size: 1.25em; line-height: 2em;}
+
+.content_area ul li:nth-of-type(odd) dl dt {margin-left: 50px;}
+.content_area ul li:nth-of-type(odd) dl dd {float: left;}
+.content_area ul li:nth-of-type(odd) dl dd:last-child {margin:140px 0 0 50px;}
+
+.content_area ul li:nth-of-type(even) dl dt {margin-left: 700px;}
+.content_area ul li:nth-of-type(even) dl dd {float: right; text-align: justify;}
+.content_area ul li:nth-of-type(even) dl dd:last-child {margin:140px 50px 0 0;}
+
+
+/* 최종목적지 */
+.content_area ul li.boxMove_L {left: 0; opacity: 1;}
+.content_area ul li.boxMove_R {right: 0; opacity: 1;}
+
+
+

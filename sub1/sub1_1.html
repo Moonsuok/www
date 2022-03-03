@@ -1,0 +1,116 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-회사개요</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>회사소개</h3>
+            <p>COMPANY INTRODUCTION</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub1_1.html">회사개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="./sub1_4.html">재무정보</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   회사소개   &gt;   <strong>회사개요</strong></p>
+                </div>
+                <h2>회사개요</h2>
+            </div>
+
+            <div class="content_area">
+                <p>세계 최고의 제품을 제공하고 환경을 생각하며 신뢰할 수 있는 파트너로 성장하겠습니다.</p>
+                
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>01 '글로벌' 석유화학 기업</dt>
+                            <dd><img src="./images/content1/con1.jpg" alt="금호석유화학 이미지"></dd>
+                            <dd>              
+                                <p>1970년 설립된 금호석유화학은 세계 최대 생산능력을 보유한 합성고무 사업을 
+                                중심으로 합성수지, 정밀화학, 나노탄소, 에너지, 건자재 등 사업을 다각도로 
+                                전개하고 있습니다.</p>
+                                <p>50여년 간 대한민국 산업발전의 파트너로 함께 성장해 온 금호석유화학은 
+                                이제 소재 혁신의 최전선에서 최고의 가치를 개발하고 제공하는 
+                                글로벌 석유화학기업으로 거듭나겠습니다.</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>02 중심을 위한 '변화'</dt>
+                            <dd><img src="./images/content1/con2.jpg" alt="중심을 향한 변화 이미지"></dd>
+                            <dd>
+                                <p>세계를 무대로 경쟁하기 위해 최고의 기술력과 최대
+                                생산력 확보에 모든 역량을 집중하고, 더 가치 있는 석유화학 제품을 
+                                제공하기 위해 IT, 에너지, 물류 등 모든 지혜를 동원했습니다.</p>
+                                <p>석유화학 산업의 중심을 향해 매순간 도전하고 변화하고 있습니다.</p>
+                                <p>사회와 회사에 대한 책임 있는 자세로 기본과 원칙에 충실하고,
+                                환경안전과 기업윤리를 최우선으로 실천하겠습니다.</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>03 사업의 기반은 '신뢰'</dt>
+                            <dd><img src="./images/content1/con3.jpg" alt="기업신뢰 이미지"></dd>                   
+                            <dd>
+                                <p>40년 이상, 세계 최고의 타이어, 자동차 산업 리더들과 
+                                견고한 파트너십을 발전시켜 왔습니다.</p>
+                                <p>25년 이상, 파업 없이 노사가 한 마음으로 신뢰하고 협력해 왔으며, 
+                                고객에게 변함 없는 최고의 품질을 제공하고 있습니다.</p>
+                                <p>다양성을 존중하고 자유로운 의사소통과 상호협력으로 회사 및 구성원 간의 
+                                인간적, 업무적 신뢰를 구축하겠습니다.</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>04 '환경'은 사업에 우선</dt>
+                            <dd><img src="./images/content1/con4.jpg" alt="환경보존 이미지"></dd>
+                            <dd>
+                                <p>환경은 사업에 우선한다는 기업철학 아래, 업계 최초로 국제 환경 경영 체계를
+                                채택하여 환경 기준 강화에 앞장서 왔습니다.</p>
+                                <p>환경과 인간을 배려하는 기술 개발을 통해 더 안전하고 
+                                건강한 환경을 만들어가고 있습니다.</p>
+                                <p>사회와 회사에 대한 책임 있는 자세로 기본과 원칙에 충실하고,
+                                환경안전과 기업윤리를 최우선으로 실천하겠습니다.</p>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/scroll.js"></script>
+</body>
+</html>

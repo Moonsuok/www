@@ -1,0 +1,27 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px; position: relative;}
+#content .content_area>p {font-size: 1.625em; text-align: center; line-height: 1.5em; margin-bottom: 130px;}
+#content .content_area>p>span {display: block;}
+#content .content_area .all {display: block; position: absolute; top: 210px; right: 10px; font-size: 30px;}
+#content .content_area .all:hover {color: #ed1c24;}
+
+
+#content .sub_tap {overflow: hidden; width: 1200px; border-bottom: 5px solid #333;}
+#content .sub_tap li {width: 150px; float: left; border-top: 3px solid #ccc; transition: all .3s ease;}
+#content .sub_tap li:hover {border-color: #ed1c24;}
+#content .sub_tap li a{display: block; width: 148px; height: 40px; padding-top: 10px; 
+    text-align: center; border: 1px solid #ccc; font-size: 1.375em; border-top: none; border-bottom: none;}
+#content .sub_tap li:last-of-type a {border-left: none;}
+ 
+#content .faq_box {display: none;}
+#content .faq_box .faq {width: 1200px; }
+#content .faq_box .faq li p:first-child {font-size: 1.1em;}
+#content .faq_box .faq li p:last-child {padding: 20px 0 20px 50px;}
+#content .faq_box .faq li p {border-bottom: 1px solid #ccc; text-align: justify; padding: 0 50px;}
+#content .faq_box .faq li p a {display: block; padding: 20px 0; font-size: 1.25em;}
+#content .faq_box .faq li p a strong {font-size: 1.25em; padding-right: 20px; color: #ed1c24;}
+#content .faq_box .faq li p i {padding-right: 20px; color: #999; font-style: normal;}
+#content .faq_box .faq li p span {float: right;}
+#content .faq_box .faq .answer {display: none; font-size: 1.25em; background: #f9f9f9;}
+#content .faq_box .faq .question:hover {background: #f4f4f4;}
+

@@ -1,0 +1,30 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 200px;}
+#content .content_area>p {font-size: 1.625em; line-height: 1.5em; text-align: justify; 
+    width: 1100px; margin: 0 auto; text-align: center; margin-bottom: 130px;}
+
+.content_area .player {width: 100%; height: 452px; padding: 50px 0 60px; position: relative;}
+.content_area .player::before {content: ''; width: 2000px; height: 452px; background: #f8f8f8;
+    position: absolute; top: 0; left: 50%; margin-left: -1000px; z-index: -1;}
+.content_area .player iframe {float: left; width: 600px; height: 350px; }
+.content_area .player dl {width: 550px; float: right; }
+.content_area .player dl dt {font-size: 1.75em; position: relative; padding: 20px 0 50px;}
+.content_area .player dl dt::after {content: ''; width: 1000px; height: 2px; background: #ccc; 
+    position: absolute; bottom: 25px; left: -50px;}
+.content_area .player dl dd {text-align: justify; line-height: 1.5em;}
+.content_area .player dl dd span {display: block; margin-top: 50px; color: #999;}
+
+.content_area .con_inner {clear: both;}
+.content_area .con_inner ul {overflow: hidden;}
+.content_area .con_inner ul li {float: left; width: 380px; margin: 30px 30px 0 0;}
+.content_area .con_inner ul li:nth-of-type(3n) {margin-right: 0;}
+.content_area .con_inner ul li a {display: block;}
+.content_area .con_inner ul li a .img {width: 380px; height: 210px; overflow: hidden; position: relative;}
+.content_area .con_inner ul li i {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, .8); font-size: 2em;}
+.content_area .con_inner ul li:hover i {color: rgba(255, 0, 0, .7); }
+.content_area .con_inner ul li a .img img {transition: all .3s ease-out;}
+.content_area .con_inner ul li a:hover .img img {transform: scale(1.1);}
+.content_area .con_inner ul li a dl {padding-top: 10px;}
+.content_area .con_inner ul li a dl dt {color: #666;}
+.content_area .con_inner ul li a dl dd {color: #999; text-align: justify;}

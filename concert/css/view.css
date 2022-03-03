@@ -1,0 +1,39 @@
+/* sub4-1 write_form */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px; font-size: 1.25rem;}
+
+#view_title li {padding: 20px 10px; border-bottom: 1px solid #ccc;}
+#view_title #view_title1 {text-align: center; border-top: 2px solid #ed1c24;}
+#view_title #view_title2 {overflow: hidden;}
+#view_title #view_title2 span:last-child {color: #666; float: right;}
+
+#view_content {min-height: 300px; border-bottom: 2px solid #999; 
+    padding: 20px 10px 60px; margin-bottom: 30px; text-align: center;}
+#view_content .item_content {text-align: left; margin-top: 30px;}
+
+#ripple {margin-bottom: 60px; padding: 0 10px; }
+#ripple #ripple_writer_title ul {overflow: hidden; margin-bottom: 10px;}
+#ripple #ripple_writer_title ul li {float: left; margin-right: 10px;}
+#ripple #ripple_writer_title ul #writer_title1 {font-size: 1rem;}
+#ripple #ripple_writer_title ul #writer_title2 {font-size: 1rem; color: #666}
+#ripple #ripple_writer_title ul #writer_title3 {float: right;}
+#ripple #ripple_writer_title ul #writer_title3 a {transition: all .2s;}
+#ripple #ripple_writer_title ul #writer_title3 a:hover {color: #ed1c24;}
+#ripple #ripple_content {margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;}
+
+#ripple form #ripple_box {overflow: hidden; margin-top: 15px;}
+#ripple form #ripple_box #ripple_box1 {float: left; width: 93%;}
+#ripple form #ripple_box #ripple_box1 textarea {width: 100%; height: 80px; resize: none; 
+    box-sizing: border-box; padding: 1%;
+    border: 1px solid #ccc; font-family: 'Noto Sans KR', sans-serif; font-size: 1rem;}
+#ripple form #ripple_box #ripple_box2 {float: right; width: 7%;}
+#ripple form #ripple_box #ripple_box2 a {font-size: 1rem; display: block; width: 100%; height: 80px;
+    text-align: center; line-height: 80px; box-sizing: border-box; border: 1px solid #ccc;
+    border-radius: 2px; transition: all .2s;}
+#ripple form #ripple_box #ripple_box2 a:hover {background: #ed1c24; color: #fff; border: 1px solid #ed1c24;}
+
+
+
+#view_button {text-align: right;}
+#view_button a {display: inline-block; padding: 10px 20px; border: 1px solid #ccc; font-size: 1rem;
+    border-radius: 2px; transition: all .2s;}
+#view_button a:hover {background: #ed1c24; color: #fff; border: 1px solid #ed1c24;}

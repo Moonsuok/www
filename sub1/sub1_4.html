@@ -1,0 +1,171 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-재무정보</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+    <link rel='stylesheet' href='./css/chart.css'>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>회사소개</h3>
+            <p>COMPANY INTRODUCTION</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub1_1.html">회사개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li class="current"><a href="./sub1_4.html">재무정보</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   회사소개   &gt;   <strong>재무정보</strong></p>
+                </div>
+                <h2>재무정보</h2>
+            </div>
+
+            <div class="content_area">
+                <ul class="sub_tab">
+                    <li><a class="tab" href="#">경영실적</a></li>
+                    <li><a class="tab" href="#">배당정책</a></li>
+                </ul>
+                <div class="sub sub1">
+                    <div id="table_con" class="sub1_1">
+                        
+                    </div>
+
+                    <div class="sub1_2">
+                        <h3>주요지표</h3>
+                        <div id="chart1" class="chartbox">
+                            <p>영업이익률 <span>(단위 %)</span></P>
+                        </div>
+                        <div id="chart2" class="chartbox">
+                            <p>부채비율 <span>(단위 %)</span></P>
+                        </div>
+                        <div id="chart3" class="chartbox">
+                            <p>총자산회전율 <span>(단위 회)</span></P>
+                        </div>
+                        <div id="chart4" class="chartbox">
+                            <p>이자보상배율 <span>(단위 배)</span></P>
+                        </div>
+                        <div id="chart5" class="chartbox">
+                            <p>ROA <span>(단위 %)</span></P>
+                        </div>
+                        <div id="chart6" class="chartbox">
+                            <p>ROE <span>(단위 %)</span></P>
+                        </div>
+                    </div>
+                </div>    
+                <div class="sub sub2">
+                    <div class="sub2_1">
+                        <h3>배당정책</h3>
+                        <dl>
+                            <dt>금호석유화학(주) 배당정책 (2021)</dt>
+                            <dd>당사는 배당가능이익 범위 내에서 회사의 이익규모 및 성장을 위한 투자재원 확보, 
+                                재무구조 안정화 등의 요인을 다각적으로 고려하여 배당을 결정하고 있습니다.
+                            </dd>
+                            <dd>
+                                최근 '17~'19 사업연도 배당성향은 별도재무제표 기준 약 15~20%이며, 
+                                당사는 친주주 정책의 일환으로 이를 상향하여 향후 3년간 별도기준 20~25% 수준의 
+                                배당성향을 유지할 계획입니다. 이는 당사의 재무안정성 확보를 위한 차입금 상환계획 
+                                및 미래 투자계획을 고려하여 결정된 정책이며, 경영환경 및 내부전략 변동에 따라 
+                                탄력적으로 적용될 수 있습니다.
+                            </dd>
+                            <dd>
+                                당사는 안정적인 사업구조를 기반으로, 회사의 성장이 
+                                주주가치 향상으로 이어질 수 있도록 항상 최선을 다하겠습니다.
+                            </dd>
+                        </dl>
+                        <p>&middot; 주당 배당금은 기타주주(보통주) 기준이며, 우선주는 보통주 대비 '50원/주'을 더 지급함</p>
+                            <p>&middot; 당사는 2016년부터 차등배당(최대주주등)을 적용하고 있음 ('16년 750원 / '17년 900원 / '18년 1,200원 / '19년 1,350원/ '20년 4,000원)</p>
+                        <table>
+                            <caption>&lt; 최근 5사업연도 배당내역 &gt;</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">사업연도/구분</th>
+                                    <th scope="col">2020년</th>
+                                    <th scope="col">2019년</th>
+                                    <th scope="col">2018년</th>
+                                    <th scope="col">2017년</th>
+                                    <th scope="col">2016년</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" colspan="3">배당금 지급액 (억원)</th>
+                                    <td>1,158</td>
+                                    <td>409</td>
+                                    <td>367</td>
+                                    <td>273</td>
+                                    <td>221</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="4">보통주 (원)</th>
+                                    <th scope="row" colspan="2">주당 배당금</th>
+                                    <td>4,200</td>
+                                    <td>1,500</td>
+                                    <td>1,350</td>
+                                    <td>1,000</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" colspan="2">시가 배당률</th>
+                                    <td>3.0%</td>
+                                    <td>1.9%</td>
+                                    <td>1.6%</td>
+                                    <td>1.0%</td>
+                                    <td>1.0%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="2">배당성향</th>
+                                    <th scope="row">별도</th>
+                                    <td>26.7%</td>
+                                    <td>15.6%</td>
+                                    <td>20.1%</td>
+                                    <td>20.2%</td>
+                                    <td>75.1%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연결</th>
+                                    <td>19.9%</td>
+                                    <td>13.9%</td>
+                                    <td>7.5%</td>
+                                    <td>12.8%</td>
+                                    <td>30.2%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>     
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/tab.js"></script>
+        <script src='./js/Nwagon.js'></script>
+        <script src='./js/chart.js'></script>
+        <script src='./js/tabledata-json.js'></script>
+</body>
+</html>

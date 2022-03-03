@@ -1,0 +1,51 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px; animation: textUp .5s ease-out forwards;}
+#content .content_area>p {font-size: 1.625em; line-height: 1.5em; text-align: center; margin-bottom: 130px;}
+
+#content #map {margin: 0 auto;}
+
+#content .center_office dl {border-bottom: 1px solid #f4f4f4; padding-bottom: 60px; overflow: hidden;}
+#content .center_office dl dt {font-size: 32px; margin: 60px 0 34px 0; position: relative;}
+#content .center_office dl dt::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: -8px; bottom: -8px;}
+#content .center_office dl dd {float: left; font-size: 1.25em; line-height: 2em; margin-right: 60px;}
+#content .center_office dl dd:last-child {margin-right: 0;}
+#content .center_office dl dd i {color: #ed1c24;}
+#content .center_office dl dd strong {display: inline-block; margin: 0 20px 0 10px;}
+
+#content ul {overflow: hidden; display: flex; margin-bottom: 130px;}
+#content ul li {float: left; flex: 1; position: relative;}
+#content ul li:last-child:after {content: ''; display: block; width: 1px; height: 400px; background: #f2f2f2;
+    position: absolute; left: -50px; top: 20px;}
+#content ul dl {border-bottom: none; }
+#content ul dl dt {font-size: 1.5em; font-weight: 700; margin: 60px 0 34px;}
+#content ul dl dd {display: block; line-height: 2em; font-size: 1.25em; text-align: justify;}
+#content ul dl dd i {display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; 
+    font-style: normal; margin-right: 7px; border-radius: 19px;
+    font-size: .75em;}
+#content ul dl dd .sub1 {color: #00b140; border: 5px solid #00b140;}
+#content ul dl dd .sub2 {color: #fc4c02; border: 5px solid #fc4c02;}
+#content ul dl dd span {display: inline-block; width: 35px; height: 2em; text-align: center; color: #fff;
+    font-size: .75em; line-height: 2em; border-radius: 5px; margin-right: 7px; vertical-align: middle;}
+#content ul dl dd .bus1 {background: #366fc6;}
+#content ul dl dd .bus2 {background: #fb5852;}
+#content ul dl dd .bus3 {background: #e9b14c;}
+#content ul dl dd .bus4 {background: #3cc344;}
+#content ul dl dd .bus5 {background: #7c47c5;}
+
+
+#content .sub_company p {font-size: 32px; margin: 130px 0 34px 0; position: relative;}
+#content .sub_company p::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 0px; bottom: -8px;}
+
+
+#content .sub_company table {margin-bottom: 200px;}
+#content .sub_company table thead th {height: 50px; width: 1200px; background: #666; color: #fff;}
+#content .sub_company table thead th:nth-of-type(1) {width: 10%;}
+#content .sub_company table thead th:nth-of-type(2) {width: 10%;}
+#content .sub_company table thead th:nth-of-type(3) {width: 20%;}
+#content .sub_company table thead th:nth-of-type(4) {width: 60%;}
+#content .sub_company table tbody th,td {height: 50px;}
+#content .sub_company table tbody tr {border-bottom: 1px solid #eee;}
+#content .sub_company table tbody td {text-align: justify;}

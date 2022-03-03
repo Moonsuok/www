@@ -1,0 +1,135 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-인사제도</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>인재채용</h3>
+            <p>RECRUIT</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub3_1.html">인재상</a></li>
+                <li class="current"><a href="./sub3_2.html">인사제도</a></li>
+                <li><a href="./sub3_3.html">직무소개</a></li>
+                <li><a href="./sub3_4.html">채용FAQ</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   인재채용   &gt;   <strong>인사제도</strong></p>
+                </div>
+                <h2>인사제도</h2>
+            </div>
+
+            <div class="content_area">
+                <h3 class="hidden">인사제도</h3>
+                <p>합리적인 성과관리를 위한 직무중심의 인사제도를 운영합니다.</p>
+                <div class="personnel_system">
+                    <ul class="system">
+                        <li>
+                            <dl>
+                                <dt>능력<span>ABILITY</span></dt>
+                                <dd>연공서열이 아닌 능력에<br>따른 연봉제 실시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>성과<span>PERFORMANCE</span></dt>
+                                <dd>회사 및 개인의 성과에 따라 보장되는 인센티브 제도</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>순환<span>ROTATION</span></dt>
+                                <dd>다양한 경력 개발의 기회를 부여하는 Job Rotation</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="edu">
+                    <div class="edu_inner">
+                        <h3>교육안내</h3>
+                        <dl>
+                            <dt>윙크 아카데미(Wink-A)</dt>
+                            <dd>윙크 아카데미(Wink-A)은 2011년부터 운영되고 있는 상시 학습 온라인 플랫폼입니다. 
+                                교육 과정은 리더십, 직무, 어학, 자격증, 전화외국어, 인문학 등 여러 분야를 포함하며, 
+                                임직원들은 윙크 아카데미에서 매년 초 필요한 역량을 진단하고 
+                                개인별로 필요한 연간 64시간 이상의 교육 계획을 수립하고 있습니다.</dd>
+                        </dl>
+                        <ul>
+                            <li>아침 자율학습</li>
+                            <li>어학강좌</li>
+                            <li>온/오프라인 교육</li>
+                            <li>교양특강</li>
+                            <li>독서감상</li>
+                            <li>직무 전문가 자격증 취득 지원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="welfare">
+                    <h3>복리후생</h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>건강한 생활을 지원합니다.</dt>
+                                <dd>· 의료비 지원(본인 및 배우자/자녀)</dd>
+                                <dd>· 정기 종합 건강검진</dd>
+                                <dd>· 하계 유급 휴가</dd>
+                                <dd>· 단체 상해보험 가입</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>안정적인 생활을 지원합니다.</dt>
+                                <dd>· 학자금 전액 지원</dd>
+                                <dd>· 경조사 지원</dd>
+                                <dd>· 근로복지기금(전세자금대출)</dd>
+                                <dd>· 교통비 지급</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>풍요로운 생활을 지원합니다.</dt>
+                                <dd>· 휴양시설</dd>
+                                <dd>· 동호회 활동 지원</dd>
+                                <dd>· 문화 활동 지원</dd>
+                                <dd>· 도서구입비 지원</dd>
+                                <dd>· 본인 및 배우자 생일 선물</dd>
+                                <dd>· 복지 포인트 지급</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="./js/scroll3_2.js"></script>
+</body>
+</html>

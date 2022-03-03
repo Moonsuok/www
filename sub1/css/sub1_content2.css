@@ -1,0 +1,27 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+@keyframes textUp {
+    0% {transform: translateY(30px); opacity: 0;}
+    50% {transform: translateY(20px); opacity: .7;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 200px;}
+
+#content .top_con {position: relative; width: 1200px; animation: textUp 2s ease-in;}
+#content .top_con::before {content: ''; display: block; width: 2000px; height: 470px;
+    background: #f9f9f9; position: absolute; left: 50%; margin-left: -1000px; top: 106px; z-index: -1;}
+#content .top_con .welcome_box {width: 345px; height: 280px; box-sizing: border-box; background: #ed1c24;
+    color: #fff; line-height: 1.5em; font-size: 1.25em; padding: 34px 0 0 34px; float: left; margin-left: 50px;}
+#content .top_con .welcome_box p {margin-bottom: 90px;}
+#content .top_con img {float: right; margin-top: 43px;}
+
+#content .bottom_con {clear: both; padding: 70px 0 150px;
+    background: url(../images/content2/kumho_ceo_sign.jpg) right 2400px no-repeat;}
+#content .bottom_con b {font-size: 1.75em; display: block; margin-bottom: .4em;}
+#content .bottom_con p {font-size: 1.5em; line-height: 2em; margin-bottom: 60px; text-align: justify;}
+#content .bottom_con p:last-of-type {margin-top: 120px; text-align: right;}
+#content .bottom_con span {color: #ed1c24;}
+#content .bottom_con i {color: #ed1c24; font-style: normal; display: block;}
+#content .bottom_con strong {font-size: 1.75em;}
+
+
+

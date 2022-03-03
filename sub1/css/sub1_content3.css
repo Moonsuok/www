@@ -1,0 +1,70 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 200px;}
+#content .sub_tab {overflow: hidden; width: 300px; margin: 0 auto;}
+#content .sub_tab li {float: left; border-bottom: 3px solid #ccc; transition: all .3s ease;}
+#content .sub_tab li:hover {border-bottom: 3px solid #ed1c24;}
+#content .sub_tab li a{display: block; width: 146px; height: 40px; padding-top: 10px; 
+    text-align: center; border: 1px solid #ccc; font-size: 1.375em; border-bottom: none;}
+#content .sub_tab li:last-of-type a {border-left: none;}
+
+#content .content_area h3 {font-size: 2.5em; text-align: center; margin: 90px 0 130px;}
+
+/*가로 스크롤탭*/
+#content .sub .navBox ul {position: relative; width: 800px; margin: 0 auto;}
+#content .sub .navBox ul::before {content: ''; width: 2000px; height: 3px; 
+    position: absolute; left: 50%; margin-left: -1000px; top: -20px; background: #eee;}
+#content .sub .navBox ul::after {content: ''; display: block; clear: both;}
+#content .sub .navBox ul li {float: left; width: 160px; text-align: center;}
+#content .sub .navBox ul li a {display: block; color: #999; font-size: 1em; position: relative; }
+#content .sub .navBox ul li a::before {content: ''; width: 14px; height: 14px; border-radius: 10px;
+    position: absolute; left: 50%; margin-left: -7px; top: -29px; border: 3px solid #eee; transition: all .3s ease;}
+#content .sub .navBox ul li:hover a::before{border: 3px solid #ed1c24;}
+
+/* 상단에 고정 sticky menu */
+#content .sub .navOn {position: fixed; width: 100%; z-index: 100; left: 0; top: 0; 
+    background: #ed1c24; transition: all .8s;}
+#content .sub .navOn ul::before {display: none;}    
+#content .sub .navOn a::before {display: none;}    
+#content .sub .navOn ul li a {padding: 25px 0; font-weight: bold; color: #fff; font-size: 1.5em;} 
+ /* 메뉴 활성화  scroll spy */
+#content .sub .navOn ul li a.spy {color: #333; background: #fff;}
+
+/*본문 내용*/
+#content .sub {display: none;}
+
+#content .history_box {width: 1200px; position: relative; margin-top: 300px;}
+#content .sub1 .history_box::before {content: ''; display: block; width: 3px; height: 6150px; background: #eee;
+    position: absolute; left: 50%; margin-left: 1.5px; top: -80px;}
+#content .history_box li {width: 550px; position: relative;}
+#content .history_box li:nth-of-type(odd) {margin-left: 650px;}
+#content .history_box li:nth-of-type(odd)::before {content: ''; display: block; width: 14px; height: 14px; 
+    border-radius: 7px; background: #ccc; position: absolute; left: -55px; top: 75px;}
+#content .history_box li:nth-of-type(even) {text-align: right; position: relative;}
+#content .history_box li:nth-of-type(even)::before {content: ''; display: block; width: 14px; height: 14px; 
+    border-radius: 7px; background: #ccc; position: absolute; right: -60px; top: 75px;}
+#content .history_box p {font-size: 1.75em; font-weight: 700; margin-bottom: 34px; 
+    display: inline-block; padding: 10px 15px; border-top: 2px solid #ed1c24; border-radius: 10px;}
+#content .history_box dl {position: relative;}
+#content .history_box dt {font-size: 1.625em; font-weight: 700; margin-bottom: 34px;}
+#content .history_box dd {margin-bottom: 34px;}
+#content .history_box .img1 {position: absolute; top: -140px; right: 20px;}
+#content .history_box .img2 {position: absolute; top: 30px; left: -530px;}
+#content .history_box .img3 {position: absolute; top: -160px; right: 20px;}
+
+
+
+/*기업수상*/
+#content .sub2 {clear: both;}
+#content .sub2 .history_box::before {content: ''; display: block; width: 3px; height: 2120px; background: #eee;
+    position: absolute; left: 50%; margin-left: 1.5px; top: -80px;}
+/*가로 스크롤탭*/
+#content .sub .navBox2 ul {position: relative; width: 800px; margin: 0 auto;}
+#content .sub .navBox2 ul::before {content: ''; width: 2000px; height: 3px; 
+    position: absolute; left: 50%; margin-left: -1000px; top: -20px; background: #eee;}
+#content .sub .navBox2 ul::after {content: ''; display: block; clear: both;}
+#content .sub .navBox2 ul li {float: left; width: 160px; text-align: center;}
+#content .sub .navBox2 ul li a {display: block; color: #999; font-size: 1em; position: relative; }
+#content .sub .navBox2 ul li a::before {content: ''; width: 14px; height: 14px; border-radius: 10px;
+    position: absolute; left: 50%; margin-left: -7px; top: -29px; border: 3px solid #eee; transition: all .3s ease;}
+#content .sub .navBox2 ul li:hover a::before{border: 3px solid #ed1c24;}
+

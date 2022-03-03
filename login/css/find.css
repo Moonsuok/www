@@ -1,0 +1,35 @@
+body {background: #f2f2f2;}
+.logo {margin: 50px auto; display: block; width: 200px; height: 70px; 
+    background: url(../images/logo.png) center no-repeat; text-indent: -999px; overflow: hidden;}
+#content {width: 600px; margin: 30px auto 60px; background: #fff; color: #333; border-radius: 5px;
+padding: 70px; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}   
+
+form {width: 100%; position: relative;}
+form input {width: 96%; padding: 10px 2%; margin-bottom: 20px; font-size: 18px; border-radius: 2px; border: 1px solid #ccc; }
+
+form .title h2 {font-size: 28px; margin: 0 0 25px 35px;}
+form .title h2::before {content: ''; position: absolute; top: 20px; left: 0; 
+    width: 28px; height: 4px; background: #ed1c24;}
+form .title p {margin-bottom: 30px;}
+
+#login_form .telBox {width: 100%;}
+#login_form .telBox .find_input {width: 28.4%; padding: 2%; font-size: 18px;}
+
+#login_form .find {display: block; width: 100%; font-size: 1rem;
+    line-height: 24px; padding: 8px 0; background: #ed1c24; color: #fff; border: none;
+    border-radius: 5px; cursor: pointer; margin: 15px 0 30px;}
+
+#login_form .go {overflow: hidden; width: 100%; padding-bottom: 15px; color: #666; font-size: 0.875rem;}
+#login_form .go li:first-child {float: left;}
+#login_form .go li:last-child {float: right;}
+#login_form .go li a {color: #999; transition: all .2s;}
+#login_form .go li a:hover {color: #333;}
+
+#login_form #join_button {padding-top: 15px; border-top: 1px solid #ccc;}
+#login_form #join_button p {font-size: 0.875rem; color: #666;}
+#login_form #join_button a {display: block; width: 100%; text-align: center; margin-top: 15px;
+    line-height: 24px; padding: 8px 0; color: #666; border: 1px solid #ccc;
+    border-radius: 5px; cursor: pointer; margin-bottom: 15px; transition: all .2s;}
+#login_form #join_button a:hover {border-color: #666;}
+
+#loadtext {display: block; margin-bottom: 30px;}

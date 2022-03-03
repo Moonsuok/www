@@ -1,0 +1,60 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+@keyframes textUp {
+    0% {transform: translateY(100px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+.content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px;}
+.content_area>p {font-size: 1.625em; line-height: 1.5em; margin-bottom: 100px; 
+    position: relative; }
+
+.content_area h3 {font-size: 2.5em; text-align: center; position: relative;}
+
+.personnel_system .system {width: 1200px; height: 373.5px;}
+.personnel_system .system::before {content: ''; display: block; clear: both;}
+.personnel_system .system li {float: left; width: 340px; margin: 0 30px 130px; text-align: center; 
+    box-sizing: border-box; padding: 40px; position: relative; 
+    box-shadow: 15px 20px 20px #f5f5f5, -5px 0 15px #f5f5f5;}
+.personnel_system .system li:nth-of-type(1) {animation-delay: .5s;}
+.personnel_system .system li:nth-of-type(2) {animation-delay: 1s;}
+.personnel_system .system li:nth-of-type(3) {animation-delay: 1.5s;}
+.personnel_system .system li::before {content:''; position: absolute; top:50%; left:50%; width:100%; 
+    height: 100%; transform: translate(-50%, -50%); transition: all .3s;}
+.personnel_system .system li::after {content:''; position: absolute; top:50%; left:50%; width:100%; 
+    height: 100%; transform: translate(-50%, -50%); transition: all .3s;}
+.personnel_system .system li::before {border-top: 1px solid #ed1c24; border-bottom: 1px solid #ed1c24; width:0;}
+.personnel_system .system li::after {border-left: 1px solid #ed1c24; border-right: 1px solid #ed1c24; height:0;}
+.personnel_system .system li:hover::before {width: 100%;} 
+.personnel_system .system li:hover::after {height: 100%;} 
+.personnel_system .system li dl dt {font-size: 1.625em; padding-bottom: 1em; position: relative;}
+.personnel_system .system li dl dt::after {content:''; width: 220px; height: 1px; background: #ed1c24;
+    position: absolute; bottom: 10px; left: 50%; margin-left: -110px; display: block; 
+    transition: all .2s ease-out; transform: scaleX(.1); opacity: 0;}
+.personnel_system .system li:hover dl dt::after {transform: scaleX(1); opacity: 1;}
+.personnel_system .system li dl dt span {color: #999; display: block;}
+.personnel_system .system li dl dd {color: #333; font-size: 1.375em;}
+
+.edu {width: 100%; height: 770px; position: relative; opacity: 0; top: 0; left: 1200px; transition: all 1s ease-out;}
+.edu::before {content: ''; width: 2000px; height: 770px; background: #f8f8f8; 
+    position: absolute; z-index: -1; top: 0; left: 50%; margin-left: -1000px;}
+.edu_inner {width: 1200px; margin: 0 auto; padding: 130px 0;}
+.edu_inner h3 {margin-bottom: 60px;}
+.edu_inner dt {font-size: 1.625em; font-weight: 700;}
+.edu_inner dd {font-size: 1.2em; text-align: justify; line-height: 1.5em; margin-top: 1em;}
+.edu_inner ul{overflow: hidden;}
+.edu_inner ul li {float: left; font-size: 1.25em; width: 300px; height: 70px;
+    border-radius: 20px; text-align: center; box-sizing: border-box; margin: 50px 50px 0 50px; line-height: 70px;}
+.edu_inner ul li:nth-of-type(2n) {background: rgba(204, 204, 204, 0.5);}
+.edu_inner ul li:nth-of-type(2n-1) {background: rgba(153, 153, 153, 0.5);}
+
+.welfare {margin-top: 130px; position: relative; animation-delay: 1s;}
+.welfare ul li {height: 400px; margin-top: 60px; padding-bottom: 60px; position: relative; 
+    border-bottom: 1px solid #ccc;}
+.welfare ul li:nth-of-type(1) {background: url(../images/content2/welfare1.jpg) left top no-repeat;}
+.welfare ul li:nth-of-type(2) {background: url(../images/content2/welfare2.jpg) left top no-repeat;}
+.welfare ul li:nth-of-type(3) {background: url(../images/content2/welfare3.jpg) left top no-repeat;}
+.welfare ul li dl {margin-left: 720px; padding: 50px 0;}
+.welfare ul li dl dt {font-weight: 700; font-size: 2em; padding-bottom: 1em; width: 220px;}
+.welfare ul li dl dd {font-size: 1.25em;}
+
+.aNi {animation: textUp .5s ease-out;}
+.moveBox_L {left: 0; opacity: 1;}

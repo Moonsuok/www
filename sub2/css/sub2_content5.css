@@ -1,0 +1,95 @@
+/* sub2_5 */
+.content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px;}
+
+.intro {position: relative; width: 100%; height: 390px; margin-bottom: 130px;}
+.intro::after {content: ''; display: block; width: 2000px; height: 390px;
+    background: url(../images/content5/title.jpg) center no-repeat; background-attachment: fixed;
+    position: absolute; top: 0; left: 50%; margin-left: -1000px; z-index: -1;}
+.intro dl {overflow: hidden; color: #fff; 
+    position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.intro dl dt {float: left; display: block; font-size: 2.5em; text-align: center; 
+    margin-right: 60px; line-height: 1.5em; width: 362px;}
+.intro dl dt span {display: block; font-family: 'Roboto', sans-serif;}
+.intro dl dd {width: 778px; float: right; font-size: 1.625em; text-align: justify; line-height: 1.5em;}
+
+.tt {font-size: 2em; position: relative; margin-bottom: 34px;}
+.tt::after {content: ''; display: block; width: 8px; height: 8px; 
+    background: #ed1c24; border-radius: 4px; position: absolute; left: 145px; bottom: 8px;}
+
+
+.con1 {margin-bottom: 130px; position: relative;
+    background: url(../images/content5/product_1.jpg) right 80px no-repeat;}
+.con1 h3 {font-size: 1.75em; font-weight: 500; padding-bottom: 1em; position: relative;}
+.con1 h3 i {font-style: normal;}
+.con1 h3::after {content: ''; width: 700px; height: 1px; background: #ccc; 
+    position: absolute; left: 0; bottom: 0; z-index: -1;}
+.con1 dl {margin-top: 1.5em;}
+.con1 dl:nth-of-type(2) {width: 650px;}
+.con1 dl dt {font-size: 1.5em; margin-bottom: .5em;}
+.con1 dl dd {font-size: 1.25em; line-height: 1.5em; color: #333; text-align: justify; padding-bottom: .5em;}
+
+.con1 table {width: 1200px; text-align: center; margin: 24px 0 200px;}
+.con1 table caption {font-size: 1.5em; margin-bottom: .5em; text-align: left;}
+.con1 table th {height: 50px;}
+.con1 table thead {border-bottom: 1px solid #999; border-top: 3px solid #ed1c24;}
+.con1 table thead tr th {width: 150px;}
+.con1 table tbody tr {border-bottom: 1px solid #ccc;}
+.con1 table tbody tr td {height: 50px;}
+
+.con1 span {position: absolute;}
+.con1 span:nth-of-type(1) {bottom: 120px; right: 0;}
+.con1 span:nth-of-type(2) {bottom: -40px;}
+.con2 {margin-bottom: 130px;}
+
+.sub_tab {overflow: hidden; width: 450px; margin: 0 auto; margin-bottom: 130px;}
+.sub_tab li {float: left; border-bottom: 3px solid #ccc; transition: all .3s ease;}
+.sub_tab li:hover {border-bottom: 3px solid #ed1c24;}
+.sub_tab li a{display: block; width: 146px; height: 40px; padding-top: 10px; 
+    text-align: center; border: 1px solid #ccc; font-size: 1.375em; border-bottom: none;}
+.sub_tab li:last-of-type a {border-left: none;}
+
+.sub {display: none;}
+.sub .img {padding-bottom: 80px; width: 100%; height: 390px; position: relative;}
+.sub .img::before {content: ''; width: 1800px; height: 400px; background: #f6f6f6; 
+    position: absolute; top: 30px; left: 30px; z-index: -1;}
+.sub .img::after {content: ''; display: block; clear: both;} 
+.sub .img_inner {width: 500px; height: 390px; overflow: hidden; float: left; 
+    box-shadow: 5px 5px 5px 5px #ccc, -5px -5px 3px 2px #f1f1f1; 
+    border-radius: 50px 0 50px 0;}
+
+.sub .img dl {float: right; width: 650px; margin-top: 100px;}
+.sub .img dl dt {font-size: 1.75em; margin-bottom: .8em;}
+.sub .img dl dd {font-size: 1.25em; line-height: 1.5em; color: #333; text-align: justify;}
+
+
+.sub table {width: 1200px; text-align: center; margin-bottom: 60px; }
+.sub table caption {font-size: 1.25em; text-align: left; margin-bottom: .5em;}
+.sub table th {height: 50px;}
+.sub table thead {border-bottom: 1px solid #999; border-top: 3px solid #ed1c24;}
+.sub table tbody tr {border-bottom: 1px solid #ccc;}
+.sub table tbody tr th {width: 130px;}
+.sub table tbody tr td {height: 50px;}
+.sub table tbody tr td:nth-of-type(1) {width: 185px;}
+
+
+
+/* 명함 */
+.card {width: 100%; position: relative; clear: both;}
+.card::before {content: ''; width: 2000px; height: 170px; background: #f4f4f4;
+    position: absolute; z-index: -1; top: 196px; left: 50%; margin-left: -1000px;}
+.card ul {float: left; width: 1200px; padding: 10px 10px 200px 10px;}
+.card ul li {float: left; width: 30%; height: 180px; 
+    background: #fff; padding: 20px 30px; position: relative; background: #fff;
+    margin: 0 20px 20px 0; box-sizing: border-box; box-shadow: 3px 3px 5px 0 #ccc;}
+.card ul li::before {content: ''; display: block; width: 194px; height: 83px; 
+    background: url(../images/content1/card_bg.jpg) center no-repeat; position: absolute; top: 0; right: 0;}
+.card ul li p:nth-of-type(1) {font-size: 1.2em; position: relative; padding-top: 10px;}
+.card ul li p:nth-of-type(1)::after {content: ''; display: block; width: 20px; height: 2px; 
+    background: #ed1c24; position: absolute; top: 0; left: 0; margin: 5px 0;}
+.card ul li p:nth-of-type(2) {color: #ed1c24;}
+.card ul li p:nth-of-type(3) {padding-top: 2em; font-size: .8em;}
+.card ul li p:nth-of-type(4) {font-size: .8em;}
+.card ul li a {display: block; float: right; width: 32px; height: 24px; 
+    background: url(../images/content1/mail.png) top left no-repeat; text-indent: -999px; overflow: hidden;}
+.card ul li a:hover {background: url(../images/content1/mail.png) -33px 0 no-repeat;}
+

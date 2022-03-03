@@ -1,0 +1,24 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px;}
+#content .sub_tap {overflow: hidden; width: 300px; margin: 0 auto;}
+#content .sub_tap li {float: left; border-bottom: 3px solid #ccc; transition: all .3s ease;}
+#content .sub_tap li:hover {border-bottom: 3px solid #ed1c24;}
+#content .sub_tap li a{display: block; width: 146px; height: 40px; padding-top: 10px; 
+    text-align: center; border: 1px solid #ccc; font-size: 1.375em; border-bottom: none;}
+#content .sub_tap li:last-of-type a {border-left: none;}
+ 
+#content h3 {font-size: 2.5em; position: relative; margin: 90px 0 130px;}
+#content h3::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -8px;}
+
+#content .task {display: none;}
+#content .task ul {margin-bottom: 200px;}
+#content .task ul li {position: relative; margin-bottom: 60px;}
+#content .task ul li::after {content: ''; display: block; clear: both;}
+#content .task ul li:nth-of-type(odd):before {content: ''; width: 2000px; height: 460px; background: #f8f8f8;
+    position: absolute; top: -30px; left: 50%; margin-left: -1000px; z-index: -1;}
+#content .task ul li dl {float: left; width: 530px; box-sizing: border-box; padding: 50px 50px 0 50px;}
+#content .task ul li dl dt {font-size: 2em;}
+#content .task ul li dl dt span {display: block; color: #ccc;}
+#content .task ul li dl dd  {display: block; font-size: 1.5em; line-height: 1.5em; margin-top: 1em;}
+#content .task ul li img {display: block; float: right; box-shadow: 15px 20px 20px #ccc;}

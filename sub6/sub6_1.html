@@ -1,0 +1,152 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원-제품문의</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>고객지원</h3>
+            <p>CS</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub6_1.html">제품문의</a></li>
+                <li><a href="./greet/list.php">공지사항</a></li>
+                <li><a href="./sub6_3.html">오시는길</a></li>
+                <li><a href="./download/list.php">자료실</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   고객지원   &gt;   <strong>제품문의</strong></p>
+                </div>
+                <h2>제품문의</h2>
+            </div>
+
+            <div class="content_area">
+                <p>메일로 문의해 주시면 빠른 시일 내에 답변 드리도록 하겠습니다.</p>
+                <div class="agreement">
+                    <h3>개인정보 수집·이용 동의<span class="import">*</span></h3>
+                    <i><span class="import">*</span>필수 입력 항목을 입력하셔야만 문의가 가능합니다.</i>
+                    <div class="policy_wrap">
+                        <div class="policy">
+                            <p>개인정보 수집ㆍ이용 동의서</p><br>
+                            <dl>
+                                <dt>1. 수집하는 개인정보의 항목</dt>
+                                <dd>본 사이트는 별도의 회원 가입 절차 없이 컨텐츠에 자유롭게 접근할 수 있습니다. 다만, 회사는 이용자의 문의하기, 사업 제안 등을 위해 아래와 같이 개인 정보를 수집하고 있습니다.</dd><br>
+                                <dd>1) 수집하는 개인정보 항목</dd>
+                                <dd>① 문의하기</dd>
+                                <dd>- (필수항목) 이름 또는 회사명, 휴대전화번호, 이메일주소</dd>
+                                <dd>- (선택항목) 집 또는 회사 전화번호, 집 또는 직장주소</dd><br>
+                                <dd>② 사업제안</dd>
+                                <dd>- (필수항목) 이름 또는 회사명, 휴대전화번호, 이메일주소</dd>
+                                <dd>- (선택항목) 집 또는 회사 전화번호, 집 또는 직장주소</dd><br>
+                                <dd>③ 서비스 이용 과정이나 사업 처리 과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다.</dd>
+                                <dd>- 서비스 이용기록, 접속 로그, 쿠키, 접속 IP 정보</dd><br>
+                            </dl>
+                            <dl>
+                                <dt>2. 개인정보의 수집 및 이용 목적</dt>
+                                <dd>회사는 수집한 개인정보를 다음과 같은 목적을 위해 활용합니다. 수집한 개인정보는 다음 목적 이외의 용도로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.</dd><br>
+                                <dd>1) 문의하기</dd>
+                                <dd>- 이용자의 온라인 문의에 따른 본인 확인, 불량작성자의 부정 이용 방지 및 비인가 사용 방지, 불만처리 등 민원처리, 고지 사항 전달</dd><br>
+                                <dd>2) 사업 제안</dd>
+                                <dd>- 사업제안 신청자의 본인 확인, 사업제안 채택 및 협의를 위한 연락, 불량작성자의 부정 이용 방지 및 비인가 사용 방지</dd><br>
+                            </dl>
+                            <dl>
+                                <dt>3. 수집한 개인정보의 보유 및 이용기간</dt>
+                                <dd>원칙적으로, 개인정보의 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.</dd>
+                                <dd>단, 관계 법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.</dd><br>
+                                <dd>- 표시/광고에 관한 기록 : 6개월(전자상거래 등에서의 소비자보호에 관한 법률)</dd>
+                                <dd>- 계약 또는 청약철회 등에 관한 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률)</dd>
+                                <dd>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년 (전자상거래 등에서의 소비자보호에 관한 법률)</dd>
+                                <dd>- 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래 등에서의 소비자보호에 관한 법률)</dd>
+                                <dd>- 신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년 (신용정보의 이용 및 보호에 관한 법률)</dd>
+                                <dd>- 위치정보 수집, 이용, 제공사실 확인 자료 : 1년 (위치정보의 보호 및 이용에 관한 법률)</dd>
+                                <dd>- 서비스 이용에 관한 기록 : 3개월 (통신비밀보호법)</dd>
+                            </dl>
+                        </div>
+                        <div class="check">
+                            <label class="hidden" for="check01">개인정보 수집 및 이용 동의</label>
+                            <input type="checkbox" id="check01" name="check01" required>
+                            <label for="check01" class="agree_label">위의 개인정보 수집 및 이용에 동의합니다.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mail_content">
+                    <h3>고객정보 입력</h3>
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <span class="import">*</span><label for="name">이름</label>
+                                <input type="text" class="form-control" placeholder="이름을 입력하세요." id="name" required
+                                    data-validation-required-message="* 이름을 입력해주세요.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <span class="import">*</span><label for="email">이메일</label>
+                                <input type="email" class="form-control" placeholder="이메일을 입력하세요." id="email" required
+                                    data-validation-required-message="* 이메일을 입력해주세요.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <span class="import">*</span><label for="phone">연락처</label>
+                                <input type="tel" class="form-control" placeholder="연락처를 입력하세요." id="phone" required
+                                    data-validation-required-message="* 연락처를 입력해주세요.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <span class="import">*</span><label for="message">내용</label>
+                                <textarea rows="5" class="form-control" placeholder="내용을 입력하세요." id="message" required
+                                    data-validation-required-message="* 내용을 입력해주세요."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12 send">
+                                <button type="submit" class="btn btn-success btn-lg">보내기</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/contact_me.js"></script>
+        <script src="./js/jqBootstrapValidation.js"></script>
+        <script src="./js/sub6_1.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {background: #f2f2f2;}
+.logo {margin: 50px auto; display: block; width: 200px; height: 70px; 
+    background: url(../images/logo.png) center no-repeat; text-indent: -999px; overflow: hidden;}
+#content {width: 600px; margin: 30px auto 60px; background: #fff; color: #333; border-radius: 5px;
+padding: 70px; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}   
+
+form {width: 100%; position: relative;}
+h2 {font-size: 28px; margin-bottom: 50px; margin-left: 35px;}
+h2::before {content: ''; position: absolute; top: 20px; left: 0; 
+    width: 28px; height: 4px; background: #ed1c24;}
+
+#id_pw_input input {width: 96%; padding: 10px 2%; margin-bottom: 20px;}
+
+.find ul {overflow:hidden; margin-bottom: 30px; font-size: 0.875rem;}
+.find ul li {width: 50%; float: left; color: #666;}
+.find ul li:last-child {text-align: right;}
+.find ul li:last-child a {padding-left: 5%; position: relative; display: inline-block; color: #999; transition: all .2s;}
+.find ul li:last-child a:hover {color: #333;}
+.find ul li:last-child a:last-child::before {content: ''; width: 1px; height: 14px; background: #999; 
+    position: absolute; top: 50%; margin-top: -7px; left: 4px; z-index: 2;}
+
+#login_button {margin-bottom: 30px;}
+#login_button .btn {display: block; width: 100%; text-align: center; font-size: 1rem;
+    line-height: 24px; padding: 8px 0; background: #e2e2e2; color: #333; border: none;
+    border-radius: 5px; cursor: pointer; margin-bottom: 15px;}
+#login_button .submit {background: #ed1c24; color: #fff;}
+
+.join {padding-top: 15px; border-top: 1px solid #ccc;}
+.join p {font-size: 0.875rem; color: #666;}
+.join a {display: block; width: 100%; text-align: center; margin-top: 15px;
+    line-height: 24px; padding: 8px 0; color: #666; border: 1px solid #ccc;
+    border-radius: 5px; cursor: pointer; margin-bottom: 15px; transition: all .2s;}
+.join a:hover {border-color: #666;}

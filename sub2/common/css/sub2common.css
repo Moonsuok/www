@@ -1,0 +1,37 @@
+/* sub2 공통 - 비주얼 / 서브네비 / 타이틀영역 */
+@keyframes textUp {
+    0% {transform: translateY(30px); opacity: 0;}
+    50% {transform: translateY(10px); opacity: .5;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes fadeOut {
+    0% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+.visual{width: 2000px; height: 350px; margin-top: 228px; position: relative; overflow: hidden;
+    left: 50%; margin-left: -1000px; top: 0; font-family: 'Noto Sans KR', sans-serif; color: #fff;}
+.visual img {animation: fadeOut 3s linear forwards;}
+.visual h3 {position: absolute; text-align: center; font-size: 40px; left: 0; top: 100px; width: 100%; 
+    font-weight: 400; animation: textUp .3s ease-out forwards;}
+.visual p {position: absolute; text-align: center; font-size: 20px; left: 0; top: 165px; width: 100%;
+    animation: textUp .5s ease-out forwards;}
+
+.sub_menu {width: 1200px; margin: 0 auto; position: relative; top: -60px; margin-bottom: -60px;}
+.sub_menu ul {overflow: hidden; width: 1000px; height: 60px; margin: 0 auto;}
+.sub_menu ul li {float: left; width: 200px;}
+.sub_menu ul li a {display: block; font-family: 'Noto Sans KR', sans-serif; font-size: 20px; color: #333; 
+    background: rgba(255,255,255,.8); text-align: center; line-height: 60px; transition: all .5s;}
+.sub_menu ul li a:hover {color: #fff; background: #ed1c24; font-weight: bold;}
+.sub_menu ul .current a{color: #fff; background: #ed1c24; font-weight: bold;}
+
+#content {width: 1200px; margin: 0 auto;}
+#content .title_area {position: relative; padding-top: 132px; font-family: 'Noto Sans KR', sans-serif;}
+#content .line_map {position: absolute; top: 83px; left: 50%; margin-left: -100px; color: #666;
+    animation: textUp .3s ease-out forwards;}
+#content .line_map strong {color: #333;}
+#content h2 {text-align: center; font-size: 50px; margin-bottom: 130px; 
+    animation: textUp .5s ease-out forwards;}
+ 
+#content .title_area::after {content: ''; display: block; width: 100px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 50%; margin-left: -50px; bottom: -13px;
+    animation: textUp .5s ease-out forwards;}

@@ -1,0 +1,72 @@
+/* sub4-1 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px; font-size: 1.25rem;}
+
+form #list_search {overflow: hidden;}
+form #list_search li {float: left;}
+form #list_search #list_search2 {margin-left: 20px;}
+form #list_search #list_search2 a i {color: #666; transition: all .2s;}
+form #list_search #list_search2 a:hover i {color: #333;}
+form #list_search #list_search2 a {font-size: 2rem; padding: 8px;}
+form #list_search #list_search3 {float: right;}
+form select {padding: 10px; margin-right: 10px; border: 1px solid #ccc;
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1rem;}
+form input {padding: 10px; background: #fff; border: 1px solid #fff; border-bottom-color: #ccc;}
+form .search_btn {background: #ed1c24; color: #fff; padding: 10px 20px; margin-left: 5px; 
+    cursor: pointer; font-family: 'Noto Sans KR', sans-serif; font-size: 1rem;}
+
+#list_item, #list_item #list_item2 span {transition: all .2s;} 
+#list_item:hover {background: #f6f6f6;} 
+#list_item:hover #list_item2 span {color: #ed1c24;} 
+
+#page_button {text-align: center; padding-top: 60px; font-size: 1rem; clear: both;}
+#button {text-align: right; font-size: 1rem;}
+#button a {display: inline-block; margin-top: 20px; padding: 10px 20px; border: 2px solid #ccc; 
+    border-radius: 2px; transition: all .2s;}
+#button a:last-child {margin-left: 10px;}
+#button a:hover {border-color: #ed1c24;  background: #ed1c24; color: #fff;}
+
+
+/* album view */
+.album #list_top_title {display: none;}
+.album #list_content {overflow: hidden; margin: 60px 0;}
+.album #list_item {width: 25%; float: left; padding: 2%; margin: 2%; border: 1px solid #ccc; 
+    position: relative;}   
+.album #list_item li {margin-bottom: 10px; font-size: 0.875rem;}
+.album #list_item li a {display: block;}
+.album #list_item li a img {width: 300px; height: 300px; margin-bottom: 15px;}
+.album #list_item li a span {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; 
+    overflow: hidden; font-weight: 700;}
+.album #list_item #list_item1 {display: none;}
+.album #list_item #list_item2 .item_subject {font-size: 1.25rem; }
+.album #list_item #list_item2 .comment {color: #999; position: absolute; bottom: 33px; left: 106px;}
+.album #list_item #list_item3 {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; 
+    overflow: hidden;}
+.album #list_item #list_item4 {color: #999; position: absolute; bottom: 22px; right: 26px;}
+.album #list_item #list_item5 {display: inline-block; color: #999;}
+.album #list_item #list_item6 {display: none;}
+
+
+
+/*list view*/
+.list #list_top_title {overflow: hidden; width: 100%; border-bottom: 2px solid #ed1c24; margin-top: 30px;}
+.list #list_top_title li {float: left; text-align: center; padding: 30px 0 15px;}
+.list #list_top_title #list_title1 {width: 10%;}
+.list #list_top_title #list_title2 {width: 55%;}
+.list #list_top_title #list_title3 {width: 10%;}
+.list #list_top_title #list_title4 {width: 15%;}
+.list #list_top_title #list_title5 {width: 10%;}
+
+.list #list_item {overflow: hidden; width: 100%;}
+.list #list_item li {float: left; text-align: center; padding: 15px 0; border-bottom: 1px solid #ccc;
+    min-height: 80px; line-height: 80px;}
+.list #list_item li a {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;
+    overflow: hidden;}
+.list #list_item li a img {margin: 0 15px;}
+.list #list_item #list_item1 {width: 10%;}
+.list #list_item #list_item2 {width: 55%; text-align: left;}
+.list #list_item #list_item2 img {width: 80px; height: 80px;}
+.list #list_item #list_item2 .comment {color: #999;}
+.list #list_item #list_item3 {display: none;}
+.list #list_item #list_item4 {width: 10%;}
+.list #list_item #list_item5 {width: 15%;}
+.list #list_item #list_item6 {width: 10%;} 

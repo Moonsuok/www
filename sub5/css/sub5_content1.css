@@ -1,0 +1,51 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 200px;}
+
+.content_area h3 {font-size: 2em; position: relative; margin-bottom: 60px;}
+.content_area h3::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -8px;}
+
+.content_area .moral_intro {position: relative; margin-top: 200px; 
+    top: 150px; opacity: 0; transition: all 1s ease-out;}
+.content_area .moral_intro::after {content: ''; display: block; position: absolute; width: 700px; 
+    height: 700px; top: -50px; right: 50px; background: #f2f2f2; z-index: -1; box-shadow: 4px 4px 8px 0 rgba(125, 125, 125, 0.3);}
+.content_area .moral_intro_img {width: 400px; height: 600px; background: url(../images/content1/moral.jpg); 
+    margin-left: 100px; float: left;}
+.content_area .moral_intro dl {float: right; width: 520px; text-align: justify; margin: 60px 120px 0 0;}
+.content_area .moral_intro dl dt {font-size: 1.75em;  line-height: 1.5em; margin-bottom: 1em;}
+.content_area .moral_intro dl dt span {color: #ccc; }
+.content_area .moral_intro dl dd {font-size: 1.25em; line-height: 2em;}
+
+
+.content_area .moral_rule {clear: both; padding-top: 300px; opacity: 0; transition: all 1s ease-out;}
+.content_area .moral_rule ul {width: 900px; margin: 0 auto;}
+.content_area .moral_rule ul>li {float: left; width: 350px; height: 300px; background: #f8f8f8;
+    margin: 34px; box-shadow: 0 4px 8px 0 rgba(125, 125, 125, 0.3); position: relative;}
+.content_area .moral_rule ul li p {font-size: 1.5em; text-align: center; margin: 50px 0 50px;}
+.content_area .moral_rule ul li span {display: block; width: 133px; height: 133px; margin: 0 auto;}
+.content_area .moral_rule ul li .icon1 {background: url(../images/content1/moral_icon_1.png);}
+.content_area .moral_rule ul li .icon2 {background: url(../images/content1/moral_icon_2.png);}
+.content_area .moral_rule ul li .icon3 {background: url(../images/content1/moral_icon_3.png);}
+.content_area .moral_rule ul li .icon4 {background: url(../images/content1/moral_icon_4.png);}
+
+.content_area .moral_rule ul li .wrap {width: 350px; height: 300px; position: absolute; top: 0; left: 0; 
+    background: #f7931e; opacity: 0; transition: all .2s ease-in;}
+.content_area .moral_rule ul li .wrap::after {content: ''; width: 300px; height: 250px; background: rgba(0,0,0,0);
+    border: 2px solid #fff; position: absolute; left: 50%; bottom: 50%; margin-left: -152px; margin-bottom: -127px;}
+.content_area .moral_rule ul li:hover .wrap {opacity: 1;}
+.content_area .moral_rule ul li .wrap ol {font-size: 1.25em; color: #fff; line-height: 1.5em; text-align: center;
+    position: absolute; left:50%; top:50%; transform:translate(-50%, -50%); width: 100%;}
+
+
+.content_area .moral_act {clear: both; padding-top: 200px; width: 100%; position: relative;
+    top: 150px; opacity: 0; transition: all 2s ease-out;}
+.content_area .moral_act::after {content: ''; display: block; width: 2000px; height: 700px; position: absolute; 
+    background: #f9f9f9; top: 130px; left: 50%; margin-left: -1000px; z-index: -1;}
+.content_area .moral_act_inner {width: 1200px; margin: 0 auto;}
+.content_area .moral_act dl {overflow: hidden;}
+.content_area .moral_act dl dt {font-size: 1.5em; float: left; width: 300px; margin-bottom: 70px; padding: 0 0 0 50px;}
+.content_area .moral_act dl dd {text-align: justify; float: right; width: 800px; margin-bottom: 25px; 
+    font-size: 1.25em; padding-bottom: 25px; border-bottom: 1px solid #ccc; }
+
+.content_area .moveBox {top: 0; opacity: 1;}
+.content_area .oPa {opacity: 1;}

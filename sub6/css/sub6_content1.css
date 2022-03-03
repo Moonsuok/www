@@ -1,0 +1,28 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px;}
+#content .content_area>p {font-size: 1.625em; line-height: 1.5em; text-align: center; margin-bottom: 130px;}
+#content .blocked {cursor: not-allowed!important}
+
+.content_area h3 {font-size: 2em; position: relative; margin-bottom: 60px;}
+.content_area h3::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -8px;}
+
+.content_area .import {color: #ed1c24; display: inline-block; padding: 0 10px;}
+
+.agreement {margin-bottom: 130px;}
+.agreement h3 {margin-bottom: 30px;}
+.agreement i {display: block; text-align: right; font-style: normal; padding-bottom: 15px;}
+.agreement .policy {padding: 30px; overflow-y: scroll; height: 160px; color: #666; background: #f9f9f9;}
+.agreement .check {text-align: right; padding-top: 15px;}
+.agreement .check label {font-size: 1.25em;}
+
+.mail_content .control-group {margin-bottom: 30px;}
+.mail_content label {display: inline-block; padding-bottom: 15px; font-size: 1.5em;}
+.mail_content input {display: block; width: 1170px; padding: 15px; font-size: 1.25em;}
+.mail_content textarea {display: block; width: 1170px; padding: 15px; font-size: 1.25em;
+    font-family: 'Noto Sans KR', sans-serif;}
+.mail_content .send {text-align: center;}
+.mail_content .send button {display: inline-block; padding: 10px 15px; background: #f2f2f2; color: #333; 
+    border: 1px solid #e2e2e2; font-size: 1.25em; cursor: pointer; transition: all .2s;}
+.mail_content .send button:hover {background: #ed1c24; color: #fff; border: 1px solid #ed1c24;}
+.mail_content .text-danger {color:#ed1c24; padding-top: 5px;}

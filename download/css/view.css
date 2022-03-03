@@ -1,0 +1,17 @@
+/* sub6-4 view */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px; font-size: 1.25rem;}
+
+#view_title li {padding: 20px 10px; border-bottom: 1px solid #ccc;}
+#view_title #view_title1 {text-align: center; border-top: 2px solid #ed1c24;}
+#view_title #view_title2 {overflow: hidden;}
+#view_title #view_title2 span:last-child {color: #666; float: right;}
+
+#view_content {min-height: 300px; border-bottom: 2px solid #999; 
+    padding: 20px 10px 60px; margin-bottom: 60px; color: #666;}
+#view_content a {transition: all .2s;}
+#view_content a:hover {color: #ed1c24;}
+
+#view_button {text-align: right;}
+#view_button a {display: inline-block; padding: 10px 20px; border: 1px solid #ccc; font-size: 1rem;
+    border-radius: 2px; transition: all .2s;}
+#view_button a:hover {background: #ed1c24; color: #fff; border: 1px solid #ed1c24;}

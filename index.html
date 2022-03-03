@@ -1,0 +1,422 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금호석유화학</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+</head>
+<body>
+    <? include "./common/main_header.html" ?>
+
+        <div class="visual">
+            <div class="main">
+                <div class="gallery">
+                    <ul>
+                        <li>
+                            <img src="./images/visual_1.jpg" alt='비주얼이미지1'>
+                            <div class="slogan">
+                                <p>GLOBAL LEADING CHEMICAL GROUP</p>
+                                <span>세계를 이끄는 그룹, 금호석유화학</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/visual_2.jpg" alt='비주얼이미지2'>
+                            <div class="slogan">
+                                <p>GLOBAL LEADING CHEMICAL GROUP</p>
+                                <span>길 위에서 집안까지 세상의 모든 만남을 만듭니다.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/visual_3.jpg" alt='비주얼이미지3'>
+                            <div class="slogan">
+                                <p>GLOBAL LEADING CHEMICAL GROUP</p>
+                                <span>화학 그 이상의 가치로 공동의 미래를 창조하는 솔루션 파트너</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/visual_4.jpg" alt='비주얼이미지4'>
+                            <div class="slogan">
+                                <p>GLOBAL LEADING CHEMICAL GROUP</p>
+                                <span>풍요로운 삶의 원천인 환경을 돌보고 지켜나갑니다.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dock">
+                    <span class="mbutton btn1"></span>
+                    <span class="mbutton btn2"></span>
+                    <span class="mbutton btn3"></span>
+                    <span class="mbutton btn4"></span>
+                    <span class="ps"></span>
+                </div>
+            </div> 
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>
+            <div class="vision">
+                    <h3>NEW VISION</h3>
+                    <p>금호석유화학의 50주년 뉴비전을 소개합니다.</p>
+                <ul class="vision_con">
+                    <li class="vision_1">
+                        <div class="vision_1_img">
+                            <img src="./images/new_vision_1.jpg" alt="화학 그 이상의 가치">
+                        </div>
+                        <dl>
+                            <dt><span class="small_red_text">Value Beyond Chemistry</span><span class="bold_text">화학 그 이상의 가치</span></dt>
+                            <dd>화학산업의 본원적 제품 경쟁력을 확보함과 동시에, 화학 너머의 기술과 서비스가 융합된 사업모델의 다각화로 기술, 리더십, 소비자의 혁신적 경험, 사회적 신뢰, 미래환경/자원보전 등 다각적 가치를 창출 할 것입니다.</dd>
+                        </dl>
+                    </li>
+                    <li class="vision_2">
+                        <div class="vision_2_img">
+                            <img src="./images/new_vision_2.jpg" alt="공동의 미래 창조">
+                        </div>
+                        <dl>
+                            <dt><span class="small_red_text">Creating Our Common Future</span><span class="bold_text">공동의 미래 창조</span></dt>
+                            <dd>사회와 인류를 아우르며 소비자 일상의 편의, 미래환경 보존, 사회적 책임 완수, 임직원의 성장, 신뢰받는 기업등을 포괄하는 지속가능한 미래를 창조 할 것입니다. </dd>
+                        </dl>
+                    </li>
+                    <li class="vision_3">
+                        <div class="vision_3_img">
+                            <img src="./images/new_vision_3.jpg" alt="솔루션 파트너">
+                        </div>
+                        <dl>
+                            <dt><span class="small_red_text">Solution Partner</span><span class="bold_text">솔루션 파트너</span></dt>
+                            <dd>제품과 기술, 서비스 결합을 통한 솔루션 사업 모델로 확장하여 고객과 사회의 이슈를 선제적으로 파악하고 최적의 대안을 제시하는 동반자 역할을 할 것입니다.   </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="business">
+                <div class="business_inner">
+                    <div class="business_text_con">
+                        <h3>BUSINESS HIGHLIGHT</h3>
+                        <p>1970년 설립된 금호석유화학은 세계 최대 생산능력을 보유한 합성고무 사업을 중심으로 50여년간 대한민국의 산업발전의 파트너로 함께 성장해왔습니다.</p>
+                    </div>
+                    <ul class="business_con">
+                        <li>
+                            <dl>
+                                <dt>세계최대합성고무<br>생산능력보유</dt>
+                                <dd><span class="big_text">50</span> 년</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>자산총계<br>(2020년 기준)</dt>
+                                <dd><span class="big_text">50,273</span> 억원</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>매출총액<br>(2020년 기준)</dt>
+                                <dd><span class="big_text">48,095</span> 억원</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>영업이익<br>(2020년 기준)</dt>
+                                <dd><span class="big_text">7,422</span> 억원</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product_text_con">
+                    <h3>PRODUCT</h3>
+                    <p>석유화학에서 에너지, 나노탄소까지 금호석유화학은 세계 최고를 추구합니다.</p>
+                </div>
+                <ul class="product_con">
+                    <li>
+                        <h4>합성고무<i>SYNTHETIC RUBBER</i></h4>
+                        <dl>
+                            <dt class="hidden">합성고무 용도</dt>
+                            <dd>
+                                <span>&#35;타이어</span>
+                                <span>&#35;신발</span>
+                                <span>&#35;고무호스</span>
+                                <span>&#35;자동차부품</span> 
+                                <span>&#35;라텍스폼</span>
+                                <a href="./sub2/sub2_1.html" title="합성고무 페이지로 이동">더보기</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>합성수지<i>SYNTHETIC RESIN</i></h4>
+                        <dl>
+                            <dt class="hidden">합성수지 용도</dt>
+                            <dd>
+                                <span>&#35;일회용컵</span>
+                                <span>&#35;건축자재</span>
+                                <span>&#35;식품용기</span>
+                                <span>&#35;자동차</span> 
+                                <span>&#35;잡화류</span>
+                                <a href="./sub2/sub2_2.html" title="합성수지 페이지로 이동">더보기</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>정밀화학<i>SPECIALTY CHEMICALS</i></h4>
+                        <dl>
+                            <dt class="hidden">정밀화학 용도</dt>
+                            <dd>
+                                <span>&#35;노화방지제</span>
+                                <span>&#35;가황촉진제</span>
+                                <span>&#35;페놀류</span>
+                                <span>&#35;페인트 첨가제</span>
+                                <span>&#35;에폭시페인트 주제</span>
+                                <a href="./sub2/sub2_3.html" title="정밀화학 페이지로 이동">더보기</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>나노탄소<i>CARBON NANOTUBE</i></h4>
+                        <dl>
+                            <dt class="hidden">나노탄소 용도</dt>
+                            <dd>
+                                <span>&#35;고강도 복합소재</span>
+                                <span>&#35;전기전도성 복합소재</span>
+                                <span>&#35;방열 복합소재</span>
+                                <span>&#35;2차 전지용 전극</span>
+                                <span>&#35;투명 전극</span>
+                                <a href="./sub2/sub2_4.html" title="나노탄소 페이지로 이동">더보기</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>에너지<i>COGENERATION PLANT</i></h4>
+                        <dl>
+                            <dt class="hidden">에너지 용도</dt>
+                            <dd>
+                                <span>&#35;열병합발전</span>
+                                <span>&#35;열전용보일러</span>
+                                <span>&#35;자원회수시설</span>
+                                <span>&#35;정제수</span>
+                                <span>&#35;송전</span>
+                                <a href="./sub2/sub2_5.html" title="에너지 페이지로 이동">더보기</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="management">
+                <h3>MORAL MANAGEMENT</h3>
+                <ul>
+                    <li>
+                        <a href="./sub5/sub5_1.html" title="윤리경영 페이지로 이동">
+                            <div class="manage_icon_bg">
+                                <div class="second circle"></div>
+                                <img src="./images/moral_management_1.png" alt="윤리경영">
+                            </div>
+                            <dl>
+                                <dt>윤리경영</dt>
+                                <dd>올바르고 깨끗한 길을 통해 정정당당히 실력으로 승부하는 기업이 되겠습니다.</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5/sub5_2.html" title="환경안전보건 페이지로 이동">
+                            <div class="manage_icon_bg">
+                                <div class="second circle"></div>
+                                <img src="./images/moral_management_2.png" alt="환경안전보건경영">
+                            </div>
+                            <dl>
+                                <dt>환경안전보건</dt>
+                                <dd>인간과 환경의 파트너로서 미래를 창조하는 기업으로 자리매김 하겠습니다.</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5/sub5_3.html" title="사회공헌 페이지로 이동">
+                            <div class="manage_icon_bg">
+                                <div class="second circle"></div>
+                                <img src="./images/moral_management_3.png" alt="사회공헌">
+                            </div>
+                            <dl>
+                                <dt>사회공헌</dt>
+                                <dd>더불어 살아가는 세상을 위한 상생의 사회공헌에 앞장서는 기업이 되겠습니다.</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <? include "./lib/func.php"; ?>
+            <div class="news">
+                <div class="news_text_con">
+                    <h3>NEWS</h3>
+                    <p>금호석유화학의 소식을 전해드립니다.</p>
+                </div>
+                <div class="news_inner">
+                    <ul class="news1">
+                        <? latest_article("concert", 8, 30); ?>
+                    </ul>
+                    <!--<ul class="news1">
+                         <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_1.jpg" alt="금호석유화학, 쌀겨 추출물로 친환경 고무 복합체 제조">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, 쌀겨 추출물로 친환경 고무 복합체 제조</dt>
+                                    <dd>2021.08.05</dd>
+                                </dl>
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_2.jpg" alt="금호석유화학, 금호폴리켐 지분 인수로 '합성고무 리더'입지 강화">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, 금호폴리켐 지분 인수로 '합성고무 리더'입지 강화</dt>
+                                    <dd>2021.05.11</dd>
+                                </dl>
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_3.jpg" alt="금호석유화학, 전문경영인 체제로 가버넌스 개편 위한 임시주총 개최">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, 전문경영인 체제로 가버넌스 개편 위한 임시주총 개최</dt>
+                                    <dd>2021.05.04</dd>
+                                </dl>
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_4.jpg" alt="금호석유화학, 코로나19 극복을 위한 '생명나눔 헌혈'실시">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, 코로나19 극복을 위한 '생명나눔 헌혈'실시</dt>
+                                    <dd>2020.07.27</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- <ul class="news2">
+                        <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_5.jpg" alt="금호석유화학, ESG 비전 발표... “Let’s AAA for ESG!”">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, ESG 비전 발표... “Let’s AAA for ESG!”</dt>
+                                    <dd>2021.09.16</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_6.jpg" alt="금호석유화학, 폐플라스틱으로 친환경 원료 제조 사업 추진">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, 폐플라스틱으로 친환경 원료 제조 사업 추진</dt>
+                                    <dd>2021.08.24</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_7.jpg" alt="금호석유화학, 맞춤형 휠체어 기증 ‘비대면 동행’">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, 맞춤형 휠체어 기증 ‘비대면 동행’</dt>
+                                    <dd>2020.07.27</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/news_8.jpg" alt="금호석유화학, ‘플라워 버킷 챌린지’ 참가">
+                                </div>
+                                <dl>
+                                    <dt>금호석유화학, ‘플라워 버킷 챌린지’ 참가</dt>
+                                    <dd>2020.06.10</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+                <a class="more" href="./concert/list.php" title="뉴스 더보기">더보기</a>
+                <div class="lrbtn">
+                    <a href="#" class="leftBtn"><i class="fas fa-long-arrow-alt-left"></i><span class="hidden">왼쪽</span></a>
+                    <a href="#" class="RightBtn"><i class="fas fa-long-arrow-alt-right"></i><span class="hidden">오른쪽</span></a>
+                </div>
+            </div>
+
+            <div class="recruit">
+                <div class="recruit_inner">
+                    <div class="recruit_text">
+                        <h3>인재채용</h3>
+                        <p><span>끊임없는 도전을 통해 </span>세계시장을 선도할 글로벌 인재를 모십니다.</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./sub3/sub3_4.html"><span class="big_wht_text">채용FAQ </span>바로가기
+                            <img src="./images/right_arrow.png" alt="채용FAQ 바로가기 화살표"></a>
+                        </li>
+                        <li>
+                            <a href="./sub3/sub3_2.html"><span class="big_wht_text">복리후생 </span>바로가기
+                            <img src="./images/right_arrow.png" alt="복리후생 바로가기 화살표"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+    
+        <? include "./common/main_footer.html" ?>
+        <script src="./mainjs/move.js"></script>
+        <script src="./mainjs/scroll.js"></script>
+        <script src="./mainjs/circle-progress.js"></script>
+        <!-- <script src="./mainjs/arrow.js"></script> -->
+        <!-- <script src="./mainjs/count.js"></script> -->
+        <!-- <script src="./mainjs/product.js"></script> -->
+
+    <!--공지사항 팝업-->
+    <div id="showimage" style="z-index: 99; position: absolute; width: 322px; left: 30px; top: 270px;">
+        <script>
+          function closeWin(){
+             var chk = document.getElementById('Notice')
+             if ( chk.checked ) {
+                   setCookie( "Notice", "done" , 1); //1일간 안보임
+              }
+          }
+         if ( getCookie( "Notice" ) == "done" ) {
+             hidebox();
+         }
+       </script>
+          <div>
+                <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+          </div>
+           <div style="font-size:12px;text-align:center;color:#fff;">
+             <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+           <a href="#" onclick="closeWin();hidebox();return false;" style="color: #fff;"> [close] </a>
+        </div>
+      </div>
+</body>
+</html>

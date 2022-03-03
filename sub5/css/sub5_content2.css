@@ -1,0 +1,114 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 회사소개 내용 */
+@keyframes spinCircle{ 100% { transform: rotate(360deg); } }
+@keyframes downArrow{ 
+    0% { transform: translateY(0); } 
+    100% { transform: translateY(10px); } 
+}
+
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 200px;}
+
+.content_area h3 {font-size: 2em; position: relative; margin-bottom: 60px;}
+.content_area h3::before {content: ''; display: block; width: 50px; height: 5px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -8px;}
+
+.content_area .intro {position: relative; top: 100px; opacity: 0; transition: all 1s ease-out;}
+.content_area .intro img {display: block; margin: 0 auto; border-radius: 50px 0 50px 0; padding-bottom: 30px;}
+.content_area .intro p {margin: 0 100px 130px; padding: 50px; font-size: 1.2em;
+    border: 5px solid #ed1c24; border-radius: 30px; border-top: 0; border-bottom: 0;
+    line-height: 2em; margin-top: -60px; text-align: justify;}
+
+
+/*가로 스크롤탭*/
+.content_area .navBox ul {position: relative; width: 800px; margin: 0 auto;}
+.content_area .navBox ul::before {content: ''; width: 2000px; height: 3px; 
+    position: absolute; left: 50%; margin-left: -1000px; top: -20px; background: #eee;}
+.content_area .navBox ul::after {content: ''; display: block; clear: both;}
+.content_area .navBox ul li {float: left; width: 33.33%; text-align: center;}
+.content_area .navBox ul li a {display: block; color: #999; font-size: 1em; position: relative; }
+.content_area .navBox ul li a::before {content: ''; width: 14px; height: 14px; border-radius: 10px;
+    position: absolute; left: 50%; margin-left: -7px; top: -29px; border: 3px solid #eee; transition: all .3s ease;}
+.content_area .navBox ul li:hover a::before{border: 3px solid #ed1c24;}
+
+/* 상단에 고정 sticky menu */
+.content_area .navOn {position: fixed; width: 100%; z-index: 100; left: 0; top: 0; 
+    background: #ed1c24; transition: all .8s;}
+.content_area .navOn ul::before {display: none;}    
+.content_area .navOn a::before {display: none;}    
+.content_area .navOn ul li a {padding: 25px 0; font-weight: bold; color: #fff; font-size: 1.5em;} 
+ /* 메뉴 활성화  scroll spy */
+.content_area .navOn ul li a.spy {color: #333; background: #fff;}
+
+
+/*비전 및 전략*/
+.content_area .vision {position: relative; margin-top: 130px; top: 100px; opacity: 0; transition: all 1s ease-out;}
+.content_area .vision ul {overflow: hidden;}
+.content_area .vision ul li {float: left;}
+
+.content_area .vision_img {position: absolute; left: 50%; margin-left: -300px; top: 145px;}
+.content_area .vision_img::before {content: ''; position: absolute; display: block; width: 620px; height: 620px; 
+    border: 5px dotted green; border-radius: 50%; left: -15px; top: -15px; 
+    animation: spinCircle 60s linear infinite; transform-origin: 50% 50%;}
+.content_area .vision_img ul {width: 600px;}
+.content_area .vision_img .vision_1 img {border-top-left-radius: 300px;}
+.content_area .vision_img .vision_2 img {border-top-right-radius: 300px;}
+.content_area .vision_img .vision_3 img {border-bottom-left-radius: 300px;}
+.content_area .vision_img .vision_4 img {border-bottom-right-radius: 300px;}
+
+.content_area .vision_text {margin-bottom: 130px;}
+.content_area .vision_text ul li:nth-of-type(even) {text-align: right; margin-left: 45px;}
+.content_area .vision_text dl {background: #f8f8f8; padding: 50px 40px; width: 575px; height: 310px; 
+    margin-bottom: 50px; box-sizing: border-box; box-shadow: 4px 6px 5px 0 rgba(125, 125, 125, 0.3);}
+.content_area .vision_text dl dt {font-size: 1.625em; margin-bottom: 1em; font-weight: 700;}
+.content_area .vision_text dl dd {font-size: 1.2em; line-height: 2em;}
+
+
+/*방침*/
+.content_area .policy {overflow: hidden; margin: 0 0 130px 25px;}
+.content_area .policy ul {float: left; margin-right: 50px; position: relative;}
+.content_area .policy ul:first-child:after {content: ''; display: block; width: 2px; height: 520px; 
+    background: #ccc; position: absolute; right: -25px; top: 0;}
+.content_area .policy ul:last-child {margin-right: 0;}
+.content_area .policy ul li {width: 550px; margin-bottom: 1em; line-height: 1.5em;}
+.content_area .policy ul li span {font-size: 1.625em; display: block; margin-bottom: 1em;}
+.content_area .policy ul li p {font-size: 1.375em; margin-bottom: 1em; line-height: 1.5em;}
+
+
+/*영향활동*/
+.content_area .active {margin-bottom: 200px; position: relative; top: 100px; opacity: 0; transition: all 1s ease-out;}
+.content_area .active ul li {overflow: hidden; width: 1200px; overflow: hidden; margin-bottom: 60px;}
+.content_area .active ul li img {display: block; float: left; width: 600px; border-top-left-radius: 50px;}
+.content_area .active ul li dl {position: relative; box-sizing: border-box; float: right; width: 600px;
+    padding: 50px;}
+.content_area .active ul li dl::before {content: ''; width: 600px; height: 400px; position: absolute;
+    background: url(../images/content2/bg.jpg) no-repeat; right: 0; top: 0; z-index: -2; border-bottom-right-radius: 50px;}
+.content_area .active ul li dl dt {margin-bottom: 60px; font-size: 1.625em;}
+.content_area .active ul li dl dt strong {font-size: 1.25em;}
+.content_area .active ul li dl dd {width: 450px; margin: 0 auto; text-align: justify; position: relative; line-height: 1.6em;}
+.content_area .active ul li dl dd::after {content: ''; width: 500px; height: 200px; background: rgba(255,255,255,.6);
+    position: absolute; left: -25px; top: -30px; z-index: -1;}
+
+
+/*환경경영*/
+.content_area .enviro {position: relative; top: 100px; opacity: 0; transition: all 1s ease-out;}
+.content_area .enviro p {text-align: justify; font-size: 1.375em; margin-bottom: 60px;}
+.content_area .enviro ul {overflow: hidden; width: 1200px;}
+.content_area .enviro ul li {width: 33.33%; float: left; text-align: center; padding-top: 60px;}
+.content_area .enviro ul li:nth-child(1) {background: url(../images/content2/enviroment_1.png) center top no-repeat;}
+.content_area .enviro ul li:nth-child(2) {background: url(../images/content2/enviroment_2.png) center top no-repeat;}
+.content_area .enviro ul li:nth-child(3) {background: url(../images/content2/enviroment_3.png) center top no-repeat;}
+.content_area .enviro ul li dl {padding-top: 30px; position: relative;}
+.content_area .enviro ul li dl::after {content: ''; width: 0; height: 0; 
+    position: absolute; border: 10px solid transparent; border-bottom-width: 0; 
+    border-top-color: #666; top: 110px; left: 190px;
+    animation: downArrow 1s infinite linear;}
+.content_area .enviro ul li dl dt {padding-bottom: 60px; font-size: 1.25em; position: relative;}
+.content_area .enviro ul li dl dt::before {content: ''; width: 175px; height: 1px; background: #ccc;
+    position: absolute; top: 90px; left: 0;}
+.content_area .enviro ul li dl dt::after {content: ''; width: 175px; height: 1px; background: #ccc;
+    position: absolute; top: 90px; right: 0;}
+.content_area .enviro ul li dl dd {color: #666; font-size: 1.2em;}
+
+
+.content_area .boxMove {top: 0; opacity: 1;}
+
+

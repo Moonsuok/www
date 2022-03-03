@@ -1,0 +1,50 @@
+
+<script language="javascript" src="js/mainpopup.js" type="text/javascript"></script>
+
+
+
+=========================================================================
+
+
+<div id="showimage" style="z-index:99;position:absolute;width:팝업의너비;left:0px;top:0px;">
+  <script language="javascript" type="text/javascript">
+    function closeWin(){
+       var chk = document.getElementById('Notice')
+       if ( chk.checked ) {
+             setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+        }
+    }
+   if ( getCookie( "Notice" ) == "done" ) {
+       hidebox();
+   }
+ </script>
+    <div>
+          <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+    </div>
+     <div style="font-size:12px;text-align:center;color:#666;">
+       <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+     <a href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+  </div>
+</div>
+
+==============================================================================
+
+* index.html 에 연결된 css파일에 추가한다.
+
+
+a:link{
+	color:#666;
+	text-decoration:none;
+}
+a:visited{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#060;
+	text-decoration:underline;
+}
+a:active{
+	color:#666;
+	text-decoration:none;
+}

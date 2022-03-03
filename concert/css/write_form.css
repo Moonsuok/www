@@ -1,0 +1,20 @@
+/* sub4-1 write_form */
+#content .content_area {font-family: 'Noto Sans KR', sans-serif; margin-bottom: 270px; font-size: 1.25rem;}
+
+form {width: 100%;}
+form ul {border-top: 2px solid #666;}
+form ul li {border-bottom: 1px solid #ccc; padding: 20px 0;}
+form ul li dl {overflow: hidden;}
+form ul li dl dt {float: left; width: 18%; margin-right: 2%; text-align: center;}
+form ul li dl dd {float: left; width: 80%; position: relative;}
+form ul li dl dd span {position: absolute; top: 0; right: 8%;}
+form ul .col2 {padding: 10px 0;}
+form ul .col2 input {width: 888px;}
+form input, form textarea {border: none; background: #f9f9f9; padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1.25rem;}
+
+#write_button {float: right; margin-top: 30px; font-size: 1rem;}
+#write_button input {padding: 10px 20px; border: 1px solid #ed1c24; background: #ed1c24; color: #fff;
+    cursor: pointer; margin-right: 10px; border-radius: 2px; font-size: 1rem;}
+#write_button a {padding: 10px 20px; border: 1px solid #ccc; border-radius: 2px; transition: all .2s;}
+#write_button a:hover {background: #ed1c24; color: #fff; border: 1px solid #ed1c24;}

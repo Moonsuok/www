@@ -1,0 +1,56 @@
+<?
+  session_start();
+
+  @extract($_GET); 
+  @extract($_POST); 
+  @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍보센터-금호뉴스</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+    
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="비주얼 이미지">
+            <h3>홍보센터</h3>
+            <p>PR CENTER</p>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub4_1.html">금호뉴스</a></li>
+                <li><a href="./sub4_2.html">금호사진</a></li>
+                <li><a href="./sub4_3.html">금호영상</a></li>
+                <li><a href="./sub4_4.html">지면광고</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <p>home   &gt;   홍보센터   &gt;   <strong>금호뉴스</strong></p>
+                </div>
+                <h2>금호뉴스</h2>
+            </div>
+
+            <div class="content_area">
+                <p>금호석유화학의 소식을 알려드립니다.</p>
+                  
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+</body>
+</html>
