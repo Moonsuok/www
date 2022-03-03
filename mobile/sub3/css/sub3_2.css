@@ -1,0 +1,68 @@
+/* sub3_2 content */
+@keyframes downArrow{ 
+    0% { transform: translateY(0); } 
+    100% { transform: translateY(10px); } 
+}
+
+.content_area h3 {position: relative; margin: 30px 0; font-size: 1.429rem;}
+.content_area h3::before {content: ''; display: block; width: 20px; height: 2px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -4px;}
+
+.intro {padding-bottom: 60px;}
+.intro img {width: 100%;}
+.intro p {border: 2px solid #ed1c24; border-radius: 30px; border-top: 0; border-bottom: 0;
+    text-align: justify; padding: 5%; margin-top: 30px;}
+
+
+/*가로 스크롤탭*/
+.navBox {padding-bottom: 30px;}
+.navBox ul {position: relative; width: 90%; margin: 0 auto; }
+.navBox ul::before {content: ''; width: 100%; height: 2px; background: #ccc; 
+    position: absolute; top: 0; left: 0; }
+.navBox ul::after {content: ''; display: block; clear: both;}
+.navBox ul li {float: left; width: 33.33%; text-align: center;}
+.navBox ul li a {display: block; position: relative; padding-top: 10px;}
+.navBox ul li a::before {content: ''; width: 8px; height: 8px; border-radius: 4px; background: #ccc; 
+    position: absolute; top: -3px; left: 50%; transform: translateX(-50%);}
+.navBox ul li:first-of-type a::before {background: #ed1c24;}
+
+/* 상단에 고정 sticky menu */
+.content_area .navOn {position: fixed; width: 100%; z-index: 100; left: 0; top: 0; 
+    background: #ed1c24; transition: all .3s; padding-bottom: 0;}
+.content_area .navOn ul {width: 100%;}    
+.content_area .navOn ul::before {display: none;}    
+.content_area .navOn a::before {display: none;}    
+.content_area .navOn ul li a {padding: 10px 0; color: #fff;} 
+ /* 메뉴 활성화  scroll spy */
+.content_area .navOn ul li a.spy {color: #333; background: #fff; font-weight: 700;}
+
+
+/*비전 및 전략*/
+.vision ul li {border-radius: 20px 0 20px 0; padding: 5%; margin-bottom: 30px;
+    box-shadow: 3px 4px 4px 4px #f2f2f2;}
+.vision ul li dl {text-align: center;}
+.vision ul li dl dt {font-size: 1.143rem; padding-bottom: .5em;}
+
+/*방침*/
+.policy dl {margin-bottom: 15px; text-align: justify;}
+.policy dl dt {font-weight: 700; font-size: 1.071rem; padding-bottom: .5em;}
+.policy dl dd span {color: #666; display: block; padding-bottom: .5em;}
+.policy dl dd p {padding-bottom: .5em;}
+
+
+/*환경경영*/
+.enviro {margin-bottom: 60px;}
+.enviro p {text-align: justify; margin-bottom: 30px;}
+.enviro ul {overflow: hidden;}
+.enviro ul li {width: 33.33%; float: left; text-align: center;}
+.enviro ul li dl { position: relative; }
+.enviro ul li dl::after {content: ''; width: 0; height: 0; 
+    position: absolute; border: 6px solid transparent; border-bottom-width: 0; 
+    border-top-color: #666; top: 40%; left: 46%;
+    animation: downArrow 1s infinite linear;}
+.content_area .enviro ul li dl dt {padding-bottom: 40px; position: relative;}
+.content_area .enviro ul li dl dt::before {content: ''; width: 44%; height: 1px; background: #ccc;
+    position: absolute; top: 60px; left: 0; }
+.content_area .enviro ul li dl dt::after {content: ''; width: 44%; height: 1px; background: #ccc;
+    position: absolute; top: 60px; right: 0;}
+.content_area .enviro ul li dl dd {color: #666;}

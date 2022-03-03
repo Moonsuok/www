@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no"/>
+    <title>고객지원-오시는길</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./common/css/common_sub4.css">
+    <link rel="stylesheet" href="./css/sub4_1.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2e2154b7555a90e83b882ae7b4490ae8"></script>
+    <script src="./js/map.js"></script>
+    <script>
+        //모바일 주소창 올라가는 스크립트
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function () {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header id="headerArea">
+            <div class="header_top">
+                <h1><a href="../index.html">금호석유화학</a></h1>
+                <a class="menu_open" href="#"><span>햄버거</span></a>
+            </div>
+            <div class="gnb_modal_box"></div> 
+
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <ul class="mainMenu">  
+                    <li class="depth1">
+                        <h3><a href="#">회사소개<b><i class="fas fa-chevron-down"></i><span class="hidden">메뉴열기</span></b></a></h3>
+                        <ul>
+                            <li><a href="../sub1/sub1_1.html">회사개요</a></li>
+                            <li><a href="../sub1/sub1_2.html">CEO인사말</a></li>
+                            <li><a href="../sub1/sub1_3.html">기업연혁</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <h3><a href="#">제품소개<b><i class="fas fa-chevron-down"></i><span class="hidden">메뉴열기</span></b></a></h3>
+                        <ul>
+                            <li><a href="../sub2/sub2_1.html">합성고무</a></li>
+                            <li><a href="../sub2/sub2_2.html">합성수지</a></li>
+                            <li><a href="../sub2/sub2_3.html">정밀화학</a></li>
+                            <li><a href="../sub2/sub2_4.html">나노탄소</a></li>
+                            <li><a href="../sub2/sub2_5.html">에너지</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <h3><a href="#">상생경영<b><i class="fas fa-chevron-down"></i><span class="hidden">메뉴열기</span></b></a></h3>
+                        <ul>
+                            <li><a href="../sub3/sub3_1.html">윤리경영</a></li>
+                            <li><a href="../sub3/sub3_2.html">환경안전보건</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <h3><a href="#">고객지원<b><i class="fas fa-chevron-down"></i><span class="hidden">메뉴열기</span></b></a></h3>
+                        <ul>
+                            <li><a href="../sub4/sub4_1.html">오시는길</a></li>
+                            <li><a href="../sub4/sub4_2.html">채용FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="jump">
+                    <li><a class="jump" href="../sub4/sub4_1.html">LOCATION</a></li>
+                    <li><a class="jump" href="../sub4/sub4_2.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="visual">
+            <div class="visual_text">
+                <h3>고객지원</h3>
+                <p>CS</p>
+            </div>
+        </div>
+        
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub4_1.html">오시는길</a></li>
+                <li><a href="./sub4_2.html">채용FAQ</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2>오시는길</h2>
+            </div>
+            <div class="content_area">
+                <p>금호석유화학의 본사 및<span></span> 계열사 위치를 알려드립니다.</p>
+                <div id="map"></div>
+                <div class="center_office">
+                    <dl>
+                        <dt>금호석유화학 본사</dt>
+                        <dd><i class="fas fa-map-marker-alt"></i><span class="hidden">adress</span><strong>주소</strong>서울특별시 중구 청계천로 100(수표동) 시그니쳐타워 동관 10~14층</dd>
+                        <dd><i class="fas fa-phone-alt"></i><span class="hidden">tel</span><strong>전화</strong>02-6961-1114</dd>
+                        <dd><i class="fas fa-fax"></i><span class="hidden">FAX</span><strong>FAX</strong>02-6961-1449</dd>
+                    </dl>
+                </div>
+                <div class="transport">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>지하철 이용시</dt>
+                                <dd><i class="sub1">2</i> 2호선 을지로 3가역 1번/2번 출구</dd>
+                                <dd><i class="sub2">3</i> 3호선 종로 3가역 4번 출구</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>버스 이용시</dt>
+                                <dd><span class="bus1">간선</span> 100번, 152번, 173번, 202번, 261번, 470번, 472번, 501번, 701번, 741번, N30번, N37번</dd>
+                                <dd><span class="bus2">직행</span> M4101번, M4102번, G8110번, 1150번, 3201번, 5000A번, 5000B번, 5005번, 5500-2번</dd>
+                                <dd><span class="bus3">순환</span> 01A번</dd>
+                                <dd><span class="bus4">지선</span> 7017번, 7021번</dd>
+                                <dd><span class="bus5">급행</span> P9110번</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_company">
+                    <p>계열사</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">계열사</th>
+                                <th scope="col">계열사명</th>
+                                <th scope="col">주소</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">연구소</th>
+                                <td>중앙연구소</td>
+                                <td>대전광역시 유성구 유성대로 1557(화암동) 우)305-348 
+                                    Tel. 042-865-8600 / Fax. 042-862-5651/865-8611</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="12">영업사무소</th>
+                                <td>광주영업사무소</td>
+                                <td>광주광역시 서구 상무민주로 121(쌍촌동) 우)502-859
+                                    Tel (062)372-6865 / Fax (062)372-6862</td>
+                            </tr>
+                            <tr>
+                                <td>대구영업사무소</td>
+                                <td>대구광역시 북구 칠곡중앙대로 461(관음동) 이조빌딩 4층 우)702-803
+                                    Tel (053)326-6336 / Fax (053)326-6340</td>
+                            </tr>
+                            <tr>
+                                <td>부산고무사무소</td>
+                                <td>부산광역시 금정구 중앙대로 1925(구서동) 금정타워 10층 우)609-310
+                                    Tel (051)516-8467 / Fax (051)516-9331</td>
+                            </tr>
+                            <tr>
+                                <td>부산수지사무소</td>
+                                <td>부산광역시 금정구 중앙대로 1925(구서동) 금정타워 10층 우)609-310
+                                    Tel (051)516-8467 / Fax (051)516-9331</td>
+                            </tr>
+                            <tr>
+                                <td>금호석유화학
+                                    상해무역유한공사</td>
+                                <td>THE PLACE Rm 2004-05,Tower C, No. 150 Zunyi Rd Shanghai, 200051, China
+                                    +86-21-6237-1837(Ext. 203) / Fax +86-21-6237-1838</td>
+                            </tr>
+                            <tr>
+                                <td>광주분공사</td>
+                                <td>Tianhe District, Guangzhou, PRC, 510620, China
+                                    Tel +86-20-3847-7265 / Fax +86-20-3839-9710</td>
+                            </tr>
+                            <tr>
+                                <td>청도분공사</td>
+                                <td>1704-05, Haihang Wanbang Center No.234 Yan An San Road, Qingdao
+                                    Tel +86-532-8503-0002(Ext.600) / Fax +86-532-8503-0023</td>
+                            </tr>
+                            <tr>
+                                <td>자카르타 사무소</td>
+                                <td>38 Jakarta Selatan 12930, Indonesia
+                                    Tel +62-21-522-8174 / Fax +62-21-522-8184</td>
+                            </tr>
+                            <tr>
+                                <td>쿠알라룸푸르 사무소</td>
+                                <td>Lot 12-03, Level 12, Block B, HP-Towers
+                                    No. 12, Jalan Genlenggang, Bukit Damansara 50490 Kuala Lumpur
+                                    Tel +60-3-2011-1813 / Fax +60-3-2011-1816</td>
+                            </tr>
+                            <tr>
+                                <td>샌디에이고 사무소</td>
+                                <td>8799 Balboa Ave, Suite 110, San Deigo, CA 92123, USA
+                                    Tel +1-619-216-6200 / Fax +1 -619-216-6277</td>
+                            </tr>
+                            <tr>
+                                <td>애틀랜타 사무소</td>
+                                <td>3675 Crestwood Parkway, Suite 250, Duluth, GA 30096, USA
+                                    Tel +1-770-559-9506 / Fax +1-770-674-7914</td>
+                            </tr>
+                            <tr>
+                                <td>프랑크푸르트 사무소</td>
+                                <td>Lyoner Strasse 34, 60528 frankfurt am Main, Germany
+                                    Tel +49-69-6605-9985 / Fax +49-69-6605-9986</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="13">생산공장</th>
+                                <td>울산고무공장</td>
+                                <td>울산광역시 남구 상개로 64(상개동) 우)680-180
+                                    Tel (052)259-6114 / Fax (052)275-6547</td>
+                            </tr>
+                            <tr>
+                                <td>울산수지공장</td>
+                                <td>울산광역시 남구 처용로 260-257(성암동) 우)680-140
+                                    Tel (052)279-8600 / Fax (052)273-1148</td>
+                            </tr>
+                            <tr>
+                                <td>여수고무제1공장</td>
+                                <td>전남 여수시 여수산단3로 118(평여동) 우)555-210
+                                    Tel (061)688-3000 / Fax (061)688-3166</td>
+                            </tr>
+                            <tr>
+                                <td>여수고무제2공장</td>
+                                <td>전남 여수시 산단중앙로 331(평여동) 우)555-210
+                                    Tel (061)692-8001 / Fax (061)692-8019</td>
+                            </tr>
+                            <tr>
+                                <td>여수정밀화학공장</td>
+                                <td>전남 여수시 여수산단2로 227(화치동) 우)555-280
+                                    Tel (061)688-3932 / Fax (061)685-5806</td>
+                            </tr>
+                            <tr>
+                                <td>여수제1에너지</td>
+                                <td>전남 여수시 여수산단2로 46-51(월하동) 우)555-290
+                                    Tel (061)690-8610 / Fax (061)690-8608</td>
+                            </tr>
+                            <tr>
+                                <td>여수제2에너지</td>
+                                <td>전남 여수시 여수산단2로 223-84(화치동) 우)555-280
+                                    Tel (061)688-7101 / Fax (061)688-7199</td>
+                            </tr>
+                            <tr>
+                                <td>여수제3에너지</td>
+                                <td>전남 여수시 율촌면 여동리 율촌제1산단 2-5블록 우)556-890
+                                    Tel (061)806-6614 / Fax (061)806-6617</td>
+                            </tr>
+                            <tr>
+                                <td>예산건자재공장</td>
+                                <td>충청남도 예산군 고덕면 예덕로 1033-9(호음리) 우)340-934
+                                    Tel (041)330-8616 / Fax (041)330-8699</td>
+                            </tr>
+                            <tr>
+                                <td>아산공장</td>
+                                <td>충청남도 아산시 신창면 온천대로 958번지 우)336-882
+                                    Tel (041)423-3114 / Fax (041)423-3199</td>
+                            </tr>
+                            <tr>
+                                <td>화성단열재공장</td>
+                                <td>경기도 화성시 정남면 발안로 1093(덕절리) 우)445-964
+                                    Tel (031)831-6600 / Fax (031)831-6619</td>
+                            </tr>
+                            <tr>
+                                <td>상해금호일려소료유한공사</td>
+                                <td>No. 1399, Jigao Road, Huacao Town, Minhang District,Shanghai 201107, China
+                                    Tel +86-21-6296-9609 / Fax +86-21-6296-9611</td>
+                            </tr>
+                            <tr>
+                                <td>일조금호금마화학유한공사</td>
+                                <td>Taoluo Industrial Park, Donggang District, Rizhao,Shandong 276805, China
+                                    Tel +86-633-867-7868 / Fax +86-633-867-7858</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+
+        <footer id="footerArea">
+            <div class="footer_inner">
+                <a class="topMove" href="#"><span class="hidden">top</span><i class="fas fa-chevron-circle-up"></i></a>
+                <div class="footer_top">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <div class="arrow_inner">
+                        <a class="arrow" href="#"><strong>패밀리사이트</strong><b><i class="fas fa-chevron-up"></i><span class="hidden">패밀리사이트더보기</span></b></a>
+                    </div>
+                    <ul class="aList">
+                        <li><a href="https://www.kpb.co.kr/kor" target="_blank" title="새 창에서 금호피앤비화학 사이트 열기">금호피앤비화학</a></li>
+                        <li><a href="https://www.polychem.co.kr/kor" target="_blank" title="새 창에서 금호폴리켐 사이트 열기">금호폴리켐</a></li>
+                        <li><a href="https://www.kmci.co.kr/kor" target="_blank" title="새 창에서 금호미쓰이화학 사이트 열기">금호미쓰이화학</a></li>
+                        <li><a href="https://www.kumhotrading.com/main/index.html" target="_blank" title="새 창에서 금호개발상사 사이트 열기">금호개발상사</a></li>
+                        <li><a href="https://www.ktnl.co.kr/main/index.html" target="_blank" title="새 창에서 금호티앤엘 사이트 열기">금호티앤엘</a></li>
+                        <li><a href="https://www.kumhoresort.co.kr/" target="_blank" title="새 창에서 금호리조트 사이트 열기">금호리조트</a></li>
+                        <li><a href="https://www.hugreen.kr/web/page/main.asp" target="_blank" title="새 창에서 금호석유화학휴그린 사이트 열기">금호석유화학 휴그린</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <address>
+                        서울시 중구 청계천로 100 (수표동) 시그니처타워 동관 10-14층 <br> 
+                        TEL. 02-6961-1114 / FAX. 02-6961-1449
+                    </address>
+                    <p>COPYRIGHT &copy; 2014 KUMHO PETROCHEMICAL. <br> ALL RIGHTS RESERVED.</p>
+                    <img src="../images/logo2.png" alt="금호석유화학 하단 로고" >
+                    <a href="http://suock4843.cafe24.com" target="_blank" title="새 창에서 금호석유화학 PC버전으로 열기">PC버전</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

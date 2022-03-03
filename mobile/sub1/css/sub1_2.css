@@ -1,0 +1,23 @@
+/* sub1_2 content */
+.top_con {width: 100%; position: relative;}
+.top_con::before {content: ''; width: 120%; height: 125px; background: #f2f2f2; 
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+.top_con::after {content: ''; display: block; clear: both;}
+.top_con .welcome_box {background: #ed1c24; padding: 15px 10px; float: left; 
+    margin: 15px 0 0 15px;}
+.top_con .welcome_box p {color: #fff; font-size: 0.714rem;}
+.top_con .welcome_box p:first-of-type {margin-bottom: 1em;}
+.top_con .welcome_box p span {display: block;}
+.top_con img {display: block; float: right; margin-right: 15px; width: 146px; height: 173px;}
+
+.bottom_con {padding: 30px 15px;}
+.bottom_con p {margin-bottom: 30px; line-height: 1.5em; text-align: justify; font-size: 1.071rem;}
+.bottom_con p:last-of-type {text-align: right; padding-bottom: 30px;
+    background: url(../images/kumho_ceo_sign1.jpg) right bottom no-repeat;}
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+    .bottom_con p:last-of-type {background: url(../images/kumho_ceo_sign2.jpg) right bottom no-repeat;
+    -webkit-background-size: 64px 30px;}
+}
+.bottom_con p b {display: block; font-size: 1.286rem; padding-bottom: .5em;}
+.bottom_con p span {color: #ed1c24;}
+.bottom_con p i {color: #ed1c24; display: block;}

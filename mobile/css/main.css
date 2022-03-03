@@ -1,0 +1,97 @@
+/* CSS Document */
+@keyframes textUp {
+    0% {transform: translateY(30px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+/*visual*/
+.visual {position: relative; top: 44px;}
+.visual .gallery li {position: relative;}
+.visual .gallery li img {width: 100%;}
+.visual .slogan {position: absolute; top: 26%; left: 0; 
+    z-index: 50; text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(0,0,0,0.4);
+    width: 100%; text-align: center; color: #fff; animation: textUp .5s linear;}
+.visual .slogan p {font-size: 1.571rem; line-height: 1.2em; font-family: 'Roboto', sans-serif;}
+.visual .slogan i {display: block;}
+.visual .slogan span {font-size: 1rem; display: block; margin-top: 10px; line-height: 1.2em;}
+
+.dock {width: 62px; position: absolute; left: 50%; transform: translateX(-50%); bottom: 30px;}
+.dock .mbutton {margin-right: 10px; cursor: pointer; display: block; float: left; width: 8px; height: 8px;
+   background: rgba(225, 225, 225, .8); border-radius: 4px; transition: all .5s}
+.dock .btn4 {margin-right: 0;}
+
+.visual .btn {display: block; position: absolute; top: 50%; transform: translateY(-50%); 
+    cursor: pointer; font-size: 30px; color:rgba(225, 225, 225, .8); padding: 20px 10px;}
+.visual .btnLeft {left: 0;}
+.visual .btnRight {right: 0;}    
+
+
+
+
+/*content*/
+#content {margin-top: 65px;}
+#content h3 {margin: 25px 0 0 32px; font-size: 1.571rem; font-weight: 700; 
+    font-family: 'Roboto', sans-serif; position: relative;}
+#content h3::after {content: ''; display: block; position: absolute; left: -32px; top: 12px; 
+    width: 24px; height: 2px; background: #ed1c24;}
+#content p.con_slogan {font-size: 1.071rem; margin-bottom: 25px; padding-left: 14px; text-align: justify;}
+
+.vision {}
+.vision ul li {overflow: hidden;}
+.vision ul li .image {width: 50%; float: left;}
+.vision ul li .image img {width: 100%;}
+.vision ul li dl {width: 50%; float: left; text-align: center; margin-top: 20%;}
+.vision ul li dl dt {font-size: 1.143rem; position: relative;}
+.vision ul li dl dt::before {font-size: 1.786rem; color: #ccc; z-index: -1;
+    position: absolute; }
+.vision ul li:nth-of-type(1) dl dt::before {content: '01'; top: -20px; left: 15px;}
+.vision ul li:nth-of-type(2) dl dt::before {content: '02'; top: -20px; left: 20px;}
+.vision ul li:nth-of-type(3) dl dt::before {content: '03'; top: -20px; left: 30px;}
+.vision ul li dl dd {font-size: 1.071rem; font-family: 'Roboto', sans-serif; color: #666;}
+
+.product {background: #f2f2f2; padding: 25px 0;}
+#content .product h3 {margin-top: 0;}
+.bizcon_wrap {height: 186px; width: 500%; overflow: hidden; position:relative; left:0;}
+.bizcon_wrap .bcon_box {height: 100%; width: 12%; float:left; position:absolute; float:left;}
+.bizcon_wrap .bcon_box:nth-of-type(1) {background: url(../images/product2_1.png) center no-repeat; background-size: cover; left: 4%;}
+.bizcon_wrap .bcon_box:nth-of-type(2) {background: url(../images/product2_2.png) center no-repeat; background-size: cover; left: 19%;}
+.bizcon_wrap .bcon_box:nth-of-type(3) {background: url(../images/product2_3.png) center no-repeat; background-size: cover; left: 34%;}
+.bizcon_wrap .bcon_box:nth-of-type(4) {background: url(../images/product2_4.png) center no-repeat; background-size: cover; left: 49%;}
+.bizcon_wrap .bcon_box:nth-of-type(5) {background: url(../images/product2_5.png) center no-repeat; background-size: cover; left: -11%;}
+.bizcon_wrap .bcon_box .pro_text {background: rgba(110, 110, 110, 0.4); width: 70%; margin: 10px;
+    padding: 10px; color: #fff; border-bottom-right-radius: 30px; height: 145px;}
+.bizcon_wrap .bcon_box .pro_text h4 {font-weight: 700; font-size: 1.143rem;}
+.bizcon_wrap .bcon_box .pro_text p {font-size: 0.857rem;}
+.bizcon_wrap .bcon_box .pro_text span {display: block; width: 22px; height: 41px; margin: 19px 0;
+    background: url(../images/bcon_arrow.svg) no-repeat;}
+.bizcon_wrap .bcon_box .pro_text a {color: #fff; border: 1px solid #fff; padding: 5px 10px; font-size: 0.857rem;}
+
+
+.management {}
+.management ul {margin-top: 25px;}
+.management ul li {height: 90px; padding: 10px 0;}
+.management ul li:nth-of-type(1) {background: url(../images/management2_1.png) center no-repeat; background-size: cover;}
+.management ul li:nth-of-type(2) {background: url(../images/management2_2.png) center no-repeat; background-size: cover;}
+.management ul li:nth-of-type(3) {background: url(../images/management2_3.png) center no-repeat; background-size: cover;}
+.management ul li dl {border: 1px solid #fff; width: 90%; height: 80px; margin: 0 auto; 
+    color: #fff; text-align: center; padding: 5px 0;}
+.management ul li dl dt {font-size: 1.25rem; margin-bottom: .5rem; }
+.management ul li dl dd {width: 100%; margin: 0 auto; line-height: 1.5em;}
+.management ul li dl dd span {display: block;}
+
+.recruit {}
+.recruit .rec_text {background: url(../images/recruit2.png) center no-repeat; height: 161px; 
+    background-size: cover; overflow: hidden; padding: 0 6%; position: relative;}
+.recruit .rec_text p {color: #fff; margin-top: 60px; 
+    font-family: 'Roboto', sans-serif; font-size: 1.286rem;}
+.recruit span {display: block;}
+.recruit .rec_text a {color: #fff; border: 1px solid #fff; padding: 5px 10px; font-size: 0.857rem;
+    position: absolute; top: 50%; transform: translateY(-50%); right: 6%;}
+
+.faq {height: 50px; background:#f2f2f2; margin: 25px 0;}
+.faq .notice_con {height: 30px; margin: 0 7px; line-height: 1em; border-radius: 7px; 
+    position: relative; top: 10px; background:#fff; box-shadow: 2px 2px 2px 2px #f1f1f1;}
+.faq .notice_con h3 {padding: 8px 0;}
+.faq .notice_con .slide_box {width: 67%; height: 13px; overflow: hidden; position: absolute; left: 30%; top: 7px;}
+.faq .notice_con .slide_box .slide {position: absolute;}
+.faq .notice_con .slide ul {font-size: 0.857rem;}
+.faq .notice_con .slide ul li {height: 13px; overflow: hidden; text-overflow: clip; margin-bottom: 5px;}

@@ -1,0 +1,23 @@
+/* sub4_2 content */
+.content_area {position: relative; margin-bottom: 30px;}
+.content_area h3 {position: relative; margin-bottom: 30px; font-size: 1.429rem;}
+.content_area h3::before {content: ''; display: block; width: 20px; height: 2px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -4px;}
+.content_area>p {text-align: center; line-height: 1.5em; margin-bottom: 30px;}
+.content_area>p span {display: block;}
+
+.sub_tab {overflow: hidden; width: 100%; border-bottom: 3px solid #333;}
+.sub_tab li {width: 18%; float: left; border-top: 3px solid #ccc; font-size: 0.857rem;}
+.sub_tab li a {display: block; width: 100%; padding: .5em 0;
+    text-align: center; border: 1px solid #ccc; border-top: none; border-bottom: none;}
+.sub_tab li:last-of-type a {border-left: none;}
+
+.all {float: right; transform: translateY(-35px); font-size: 1.5rem;}
+ 
+.faq_box {display: block;}
+.faq_box .faq li p {border-bottom: 1px solid #ccc; text-align: justify;}
+.faq_box .faq li .question a {display: block; width: 90%; padding: .5em 10% .5em 0; position: relative;}
+.faq_box .faq li .question a span {position: absolute; top: 50%; transform: translateY(-50%); right: 0;}
+.faq_box .faq li .question strong {padding-right: 20px; color: #ed1c24;}
+.faq_box .faq li .answer {display: block;  background: #f2f2f2; padding: .5em;}
+.faq_box .faq li .answer i {padding-right: 1em; color: #999;}

@@ -1,0 +1,73 @@
+/* sub2_1 content */
+.intro {width: 100%; height: 130px; margin-bottom: 30px;
+    background: url(../images/sub2_1_title_bg.jpg) center no-repeat; background-size: cover;}
+.intro dl {overflow: hidden; color: #fff; width: 95%; padding: 0 2.5%;
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center;}
+.intro dl dt {text-align: center; line-height: 1.5em; font-size: 1.286rem;
+    width: 30%; float: left;}
+.intro dl dt span {display: block; font-family: 'Roboto', sans-serif; font-size: 0.857rem; line-height: 1.5em;}
+.intro dl dd {text-align: justify; line-height: 1.5em; font-size: 0.857rem;
+    width: 65%; padding-right: 5%; float: right;}
+
+.tt {font-size: 1.286rem; position: relative; margin: 0 0 30px 30px;}
+.tt::before {content: ''; width: 60%; height: 1px; background: #ccc;
+    position: absolute; left: -30px; bottom: -15px;}
+.tt::after {content: ''; display: block; width: 20px; height: 2px; 
+    background: #ed1c24; position: absolute; left: -30px; top: 50%; transform: translateY(-50%);}
+
+.con1 dl {margin-bottom: 30px; padding: 0 5%;}
+.con1 dl dt {margin-bottom: 1em; font-size: 1.143rem;}
+.con1 dl dd {line-height: 1.5em; color: #333; text-align: justify;}
+
+.con2 {position: relative;}
+.con2 table {text-align: center; width: 96%; padding: 5px 2% 0; margin: 0 auto;}
+.con2 table thead {background: #ed1c24; color: #fff; font-family: 'Roboto', sans-serif;}
+.con2 span {color: #999; padding-left: 4%; font-size: 0.857rem; }
+
+.con3 {margin-top: 30px;}
+.con3 ul {padding: 20px 10px 0;}
+.con3 ul::after {content: ''; display: block; clear: both;}
+.con3 ul li {float: left; margin-bottom: 30px; width: 48%; box-shadow: 2px 2px 2px 2px #eee;
+    border-radius: 20px 0 20px 0;}
+.con3 ul li:nth-of-type(even) {margin-left: 4%;}
+.con3 ul li a {display: block; }
+.con3 ul li a .img img {width: 100%;}
+
+.con3 ul li dl {color: #333; padding: 10px; background: #f4f4f4; }
+.con3 ul li dl dt {font-family: 'Roboto', sans-serif;}
+.con3 ul li dl dd {font-size: 0.714rem; padding-top: .5em; color: #999;} 
+
+
+.card {margin-bottom: 30px;}
+.card ul {overflow: hidden; width: 90%; position: relative; padding: 0 5% 30px;}
+.card ul::before {content: ''; width: 100%; height: 100px; background: #f4f4f4;
+    position: absolute; z-index: -1; top: 60px; left: 50%; transform: translateX(-50%);}
+.card ul li {float: left; width: 24%;  background: #fff; position: relative; padding: 3%;
+    box-shadow: 2px 2px 2px 2px #ccc;}
+.card ul li:nth-of-type(3n-1) {margin: 0 5%;}
+.card ul li p:nth-of-type(1) {position: relative; padding: 10px 0; }
+.card ul li p:nth-of-type(1)::after {content: ''; display: block; width: 20px; height: 2px; 
+    background: #ccc; position: absolute; bottom: 4px; left: 0;}
+.card ul li p:nth-of-type(2) {color: #ed1c24; font-size: 0.786rem; }
+.card ul li p:nth-of-type(3) {font-size: 0.714rem; }
+.card ul li p:nth-of-type(4) {font-size: 0.714rem; }
+.card ul li a {display: block; padding: 5px 10px; font-size: 0.786rem; position: absolute; top: 0; right: 2%;}
+.card ul li a i {font-size: 1rem;}
+
+
+/*pop*/
+.popup {width: 100%; height: 100%; overflow-y: scroll; background: #fff; 
+    position: fixed; top: 0; left: 0; z-index: 100; display: none;}
+.popup::after {content: '제품정보'; width: 100%; height: 39px; background: #fff; 
+    font-size: 1.143rem; border-bottom: 1px solid #ccc; line-height: 40px;
+    position: fixed; left: 0; top: 0; z-index: 101; text-align: center; }
+
+.popup .prd_info {margin-top: 50px; padding: 0 3%;}
+.popup .prd_info img {display: block; margin: 0 auto 30px; width: 100%;}
+.popup .prd_info dl {margin: 10px 0 40px;}
+.popup .prd_info dl dt {line-height: 1.5em; font-size: 1.429rem;}
+.popup .prd_info dl:first-of-type dt {font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 1.571rem;}
+.popup .prd_info dl dt span {display: block; color: #666; font-size: 1.286rem;}
+.popup .prd_info dl dd {margin-top: .5em; font-size: 1.143rem; text-align: justify;}
+.popup .close_btn {position: fixed; top: 0; right: 0; padding: 9px 15px; z-index: 102;}
+.popup .close_btn i {font-size: 1.571rem; color: #666;}

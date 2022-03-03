@@ -1,0 +1,19 @@
+/* sub1_1 content */
+.content_area {padding: 0 5%;}
+.content_area>p {font-family: 'Nanum Myeongjo', serif; text-align: center; line-height: 1.5em; 
+    margin-bottom: 30px;}
+.content_area>p span {display: block;}
+
+.content_area ul {}
+.content_area ul li {margin-bottom: 60px;}
+.content_area ul li .img {background-size: cover; height: 80px; width: 80%; padding: 0 10%; margin: 0 auto;}
+.content_area ul li:nth-of-type(1) .img {background: url(../images/management2_1.jpg) center bottom no-repeat;}
+.content_area ul li:nth-of-type(2) .img {background: url(../images/management2_2.jpg) center no-repeat;}
+.content_area ul li:nth-of-type(3) .img {background: url(../images/management2_3.jpg) center no-repeat;}
+.content_area ul li:nth-of-type(4) .img {background: url(../images/management2_4.jpg) center top no-repeat;}
+
+.content_area ul li dl {margin-top: 30px;}
+.content_area ul li dl dt {position: relative; font-size: 1.286rem;}
+.content_area ul li dl dt::before {content: ''; width: 20px; height: 2px; background: #ed1c24; 
+    position: absolute; bottom: -2px; left: -2px;}
+.content_area ul li dl dd {text-align: justify; line-height: 1.5em; margin-top: 1em;}

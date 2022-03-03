@@ -1,0 +1,45 @@
+/* sub4_1 content */
+#map {width: 80%; padding: 0 10%; height: 300px; margin-bottom: 30px;}
+
+.content_area h3 {position: relative; margin-bottom: 30px; font-size: 1.429rem;}
+.content_area h3::before {content: ''; display: block; width: 20px; height: 2px; 
+    background: #ed1c24; position: absolute; left: 0; bottom: -4px;}
+.content_area>p {text-align: center; line-height: 1.5em; margin-bottom: 30px;}
+.content_area>p span {display: block;}
+
+.center_office dl {border-bottom: 1px solid #ccc; padding-bottom: 15px; overflow: hidden;}
+.center_office dl dt {font-size: 1.286rem; padding-bottom: .5em;}
+.center_office dl dd {line-height: 1.5em; text-align: justify;}
+.center_office dl dd i {color: #ed1c24;}
+.center_office dl dd strong {margin: 0 5% 0 3%;}
+
+.transport {}
+.transport ul {margin-bottom: 30px;}
+.transport ul li {position: relative;}
+.transport ul li:last-child:after {content: ''; display: block; width: 1px; height: 400px; background: #f2f2f2;
+    position: absolute; left: -50px; top: 20px;}
+.transport ul dl {margin-top: 15px;}
+.transport ul dl dt {font-weight: 700;}
+.transport ul dl dd {display: block; line-height: 2em; text-align: justify;}
+.transport ul dl dd i {display: inline-block; width: 18px; height: 18px; line-height: 18px; text-align: center; 
+    font-style: normal; margin-right: 9px; border-radius: 19px;}
+.transport ul dl dd .sub1 {color: #00b140; border: 2px solid #00b140;}
+.transport ul dl dd .sub2 {color: #fc4c02; border: 2px solid #fc4c02;}
+.transport ul dl dd span {display: inline-block; width: 30px; height: 2em; text-align: center; color: #fff;
+    line-height: 2em; border-radius: 5px; margin-right: 7px; vertical-align: middle; font-size: 0.857rem;}
+.transport ul dl dd .bus1 {background: #366fc6;}
+.transport ul dl dd .bus2 {background: #fb5852;}
+.transport ul dl dd .bus3 {background: #e9b14c;}
+.transport ul dl dd .bus4 {background: #3cc344;}
+.transport ul dl dd .bus5 {background: #7c47c5;}
+
+
+.sub_company p {font-size: 1.286rem; padding-bottom: .5em;}
+.sub_company table {margin-bottom: 60px;}
+.sub_company table thead th {height: 20px; width: 100%; background: #666; color: #fff;}
+.sub_company table thead th:nth-of-type(1) {width: 25%;}
+.sub_company table thead th:nth-of-type(2) {width: 25%;}
+.sub_company table thead th:nth-of-type(3) {width: 50%;}
+.sub_company table tbody tr {border-bottom: 1px solid #eee;}
+.sub_company table tbody tr:last-of-type {border-bottom: none;}
+.sub_company table tbody td {text-align: justify;} 
