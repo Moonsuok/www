@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* wide PC */
+/* visual */
+.videoBox {width:100%; height:100%; overflow:hidden; position:absolute; text-align: center;}
+   
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*이미지 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*이미지 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down {display: block; font-size: 22px;
+   position: absolute; left:50%; transform: translateX(-50%); bottom: 10%; }
+.down span {display: block; font-family: 'Paytone One', sans-serif; padding-bottom: 25px; text-align: center;
+   animation: ani 1s infinite alternate;} 
+@keyframes ani {
+	0% {transform:scale(1); opacity: .8; color:#999; }
+	100% {transform:scale(1.2); opacity: 1; color:#fff;}
+}	
+.down .img {position: relative; text-align: center;}
+.down .img::before {content: ''; width: 80px; height: 80px; border-radius: 42px; transform: rotateY(0);
+   border: 2px solid #fff; position: absolute; top: 50%; left: 50%; margin: -42px;
+   box-shadow: 1px 1px 2px 3px rgba(255,255,255,.8), -1px -1px 2px 3px rgba(255,255,255,.6);
+   transition: all .3s ease-in;}
+.down:hover .img::before {transform: rotateY(360deg);}
+
+
+/* content */
+#content {width: 100%; padding-top: 200px; margin-bottom: 200px;}
+#content h2 {font-size: 100px; color: #fff; font-family: 'Paytone One', sans-serif; letter-spacing: 5px;
+   position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-shadow: 3px 3px 3px #00adef;
+   animation: visual_text 1s alternate;}
+@keyframes visual_text {
+      0% {letter-spacing: 100px; opacity: 0;}
+      100% {letter-spacing: 5px; opacity: 1;}
+   }
+#content h2::before {content: ''; width: 105px; height: 200px; 
+   background: url(../images/sub_title_bubble.png) center no-repeat; 
+   background-size: 100% auto;
+   position: absolute; top: -100px; left: -105px;} 	
+
+h3 {font-size: 35px; font-family: 'Paytone One', sans-serif;}
+
+.mainstory {background: rgba(0,0,0,.9); color: #fff; text-align: center; padding: 50px 5%;}
+.mainstory p {font-size: 18px; line-height: 2rem; width: 70%; margin: 25px auto 0;}
+
+.seperation {height: 200px; text-align: center;}
+.seperation h3 {line-height: 200px; font-size: 70px; color: #00adef; text-shadow: 2px 2px 2px #fff;}
+
+.plot {background: #f08000; width: 90%; padding: 50px 5%; display: flex;}
+.plot .img_box:hover li {filter: sepia(100%);}
+.plot .img_box li:hover {filter: sepia(0);}
+.plot .img_box li {transition: all .5s; border-radius: 20px;}
+.plot .text_box {padding: 5%; background: rgba(255,255,255,.6);
+   border-radius: 10% 50% 40% 40% / 50% 15% 30% 10%; border-width: 2px 1px 5px 1px;
+   border-style: solid; border-color: #fff;
+   box-shadow: 10px 10px 10px rgb(0 0 0 / 15%), inset 10px 10px 30px 10px rgb(255 255 255 / 80%);}
+.plot .text_box p {font-size: 18px; margin-bottom: 2rem;}
+
+.plot1 {position: relative;}
+.plot1 .mask {width: 100%; position: absolute; top: -9%; left: 5%;}
+/*sticky*/
+.sticky {position: fixed; top: 100px; left: 5%; z-index: 30;}
+
+.plot1::after {content: ''; width: 446px; height: 231px; 
+   background: url(../images/sub1_plot_deco_1.png) center no-repeat; background-size: 100% auto;
+   position: absolute; bottom: -3%; right: 3%; animation: move_lr 3s infinite alternate ease-in-out;}
+@keyframes move_lr {
+      0% {transform:translateX(-10%); }
+      100% {transform:translateX(10%);}
+   }
+
+.plot1 .img_box {display: grid; grid-gap: 10px; width: 50%;
+   grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
+.plot1 .img_box li {background-repeat: no-repeat; background-position: center; background-size: cover; height: 320px;}
+.plot1 .img_box li:nth-child(1) {background-image: url(../images/sub1_plot1_1.png); grid-column: 1/3; grid-row: 1/2;}
+.plot1 .img_box li:nth-child(2) {background-image: url(../images/sub1_plot1_2.png); grid-column: 1/2; grid-row: 2/3;}
+.plot1 .img_box li:nth-child(3) {background-image: url(../images/sub1_plot1_3.png); grid-column: 2/3; grid-row: 2/3;}
+.plot1 .text_box {width: 37%; margin-left: 3%;}
+
+.plot2 {align-items: center; position: relative;}
+.plot2 .text_box {width: 37%; margin-right: 3%;}
+.plot2 .img_box {width: 50%; overflow: hidden; border-radius: 232px;}
+.plot2 .img_box img {width: 100%; }
+/*zoom*/
+.zoom {animation: zoom 1s forwards ease-in; animation-delay: .2s;}
+@keyframes zoom {
+   0% {transform:scale(1); }
+   100% {transform:scale(1.3);}
+}
+
+.plot3 .img_box {display: grid; grid-gap: 10px; width: 50%;
+   grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
+.plot3 .img_box li {background-repeat: no-repeat; background-position: center; background-size: cover; height: 320px;}
+.plot3 .img_box li:nth-child(1) {background-image: url(../images/sub1_plot3_1.png); grid-column: 1/2; grid-row: 1/2;}
+.plot3 .img_box li:nth-child(2) {background-image: url(../images/sub1_plot3_2.png); grid-column: 2/3; grid-row: 1/2;}
+.plot3 .img_box li:nth-child(3) {background-image: url(../images/sub1_plot3_3.png); grid-column: 1/2; grid-row: 2/3;}
+.plot3 .img_box li:nth-child(4) {background-image: url(../images/sub1_plot3_4.png); grid-column: 2/3; grid-row: 2/3;}
+.plot3 .text_box {width: 37%; margin-left: 3%; position: relative;}
+.plot3 .text_box::after {content: ''; width: 233px; height: 231px; 
+   background: url(../images/sub1_plot_deco_2.png) center no-repeat; background-size: 100% auto;
+   position: absolute; bottom: -8%; left: 50%; margin-left: -116px;
+   animation: move_td .5s infinite alternate ease;}
+@keyframes move_td {
+      0% {transform:translateY(-15%); }
+      100% {transform:translateY(0);}
+   }
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* Tablet */
+@media screen and (max-width:1024px) {
+	#content {width: auto;}
+   h3 {font-size: 30px;}
+
+   .plot {flex-wrap: wrap;}
+
+   .plot1 {position: relative;}
+   .plot1::after { background-size: 80% auto;}
+   .plot1 .img_box {width: 100%;}
+   .plot1 .text_box {width: 90%; margin-left: 0; margin-top: 50px; padding-top: 10%;}
+
+   .plot2 .text_box {width: 90%; margin-right: 0; margin-bottom: 50px;}
+   .plot2 .img_box {width: 70%; margin: 0 auto;}
+
+   .plot3 .img_box {width: 100%;}
+   .plot3 .text_box {width: 90%; margin-left: 0; margin-top: 50px; padding-top: 10%;}
+   .plot3 .text_box::after {background-size: 50% auto; bottom: -30%;}
+   @keyframes move_td {
+         0% {transform:translateY(-10%); }
+         100% {transform:translateY(0);}
+      }
+}
+
+/* Mini Tablet */
+@media screen and (max-width:768px) {
+   #content {padding-top: 100px;}
+   #content h2 {font-size: 80px;}
+   #content h2::before {background-size: 50% auto; left: -90px;} 
+   h3 {font-size: 24px;}
+   .seperation h3 {font-size: 60px;}
+   .mainstory p {font-size: 16px;}
+
+   .plot1 .img_box {grid-template-rows: repeat(1, 1fr);}
+   .plot1 .img_box li:nth-child(1) {display: none;}
+   .plot1 .img_box li:nth-child(2) {background-image: url(../images/sub1_plot1_2.png); grid-column: 1/2; grid-row: 1/2;}
+   .plot1 .img_box li:nth-child(3) {background-image: url(../images/sub1_plot1_3.png); grid-column: 2/3; grid-row: 1/2;}
+   .plot1 .text_box {width: 80%; padding: 10%;}
+
+   .plot2 .text_box {width: 80%; padding: 10%;}
+
+   .plot3 .text_box {width: 80%; padding: 10%;}
+   .plot3 .img_box li:nth-child(1) {background-image: url(../images/sub1_plot3_1.png); grid-column: 1/3; grid-row: 1/2;
+      background-position-y: 78%;}
+   .plot3 .img_box li:nth-child(2) {display: none;}
+}
+
+/* Mobile */
+@media screen and (max-width:640px) {
+   #content h2 {letter-spacing: 0; animation: visual_text2 1s alternate; font-size: 70px;}
+   #content h2::before {background-size: 40% auto; left: -69px;}
+   @keyframes visual_text2 {
+      0% {letter-spacing: 100px; opacity: 0;}
+      100% {letter-spacing: 0; opacity: 1;}
+   } 
+   .mainstory {padding: 50px 2%;}
+
+   .plot1::after {background-size: 80% auto; bottom: -3%; right: 0; 
+      animation: move_lr2 3s infinite alternate ease-in-out;}
+   @keyframes move_lr2 {
+         0% {transform:translateX(0); }
+         100% {transform:translateX(10%);}
+      }
+   .plot1 .mask {width: 80%; top: -5%;}
+   .plot1 .img_box li:nth-child(1) {display: block; grid-column: 1/3; grid-row: 1/2; background-position-x: -221px;}
+   .plot1 .img_box li:nth-child(2) {display: none;}
+   .plot1 .img_box li:nth-child(3) {display: none;}
+
+   .plot2 .img_box {border-radius: 0; width: 100%;}
+
+   .plot3 .img_box li:nth-child(3) {display: none;}
+   .plot3 .img_box li:nth-child(4) {grid-column: 1/3; grid-row: 2/3; background-position-y: 88%;}
+   .plot3 .text_box::after {background-size: 50% auto; bottom: -20%;}
+}
+
+
+

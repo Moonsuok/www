@@ -1,0 +1,126 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Paytone+One&display=swap');
+
+/* Reset CSS  */
+* {margin:0; padding:0; border:0; outline:0; vertical-align:top; -webkit-text-size-adjust:none;}
+html {font-size:16px;}
+body {font-family: 'Dosis', sans-serif; color:#333; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; }
+ul, ol, dl {list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited {color:#333; }
+a:hover, a:active {color:#333; text-decoration:none;}
+table {border-collapse:collapse; border-spacing:0; }
+input, select {vertical-align:middle; }
+label {cursor:pointer;}
+.blind,legend,hr,caption {display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address {font-style:normal; font-weight:normal; }
+p,li,dd {line-height:1.5em}
+.hidden, #skipNav {display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+
+/* wide PC */
+/* 헤더 공통 영역 */
+#wrap {width:100%; overflow: hidden}
+
+#headerArea {position:fixed; z-index: 30; height: 90px; background: rgba(0,0,0,.85); left:0; top: 0; width: 100%}	
+.headerInner {width: 90%; margin: 0 5%;}
+.headerInner::before {content: ''; display: block; clear: both;}
+.headerInner h1 {float: left; margin-top: 15px}
+.headerInner h1 a {display: block; width: 182px; height: 64px;
+    background: url(../images/logo_1600.png) no-repeat; text-indent: -999px; overflow: hidden;}	
+
+.headerInner .menu_open {display: none; float: right; height: 60px; border-radius: 5px; padding: 10px;}
+.headerInner .menu_open span {width: 20px; height: 4px; background: #fff; position: relative;
+    text-indent: -9999px; display: block; border-radius: 5px; margin-top: 28px; transition: all .3s;}
+.headerInner .menu_open span::before {content: ''; display: block; width: 30px; height: 4px;
+    background: #f08000; position: absolute; top: -10px; left: 0; border-radius: 5px; transition: all .3s;}
+.headerInner .menu_open span::after {content: ''; display: block; width: 30px; height: 4px;
+    background: #f08000; position: absolute; top: 10px; left: 0; border-radius: 5px; transition: all .3s;}
+
+/* menu open */
+#headerArea.mn_open .menu_open span {background: rgba(0,0,0,0);}
+#headerArea.mn_open .menu_open span::before {transform: rotate(45deg); top: 0;}
+#headerArea.mn_open .menu_open span::after {transform: rotate(-45deg); top: 0;}
+
+.headerInner #gnb {float: right;}
+.headerInner #gnb ul {font-family: 'Paytone One', sans-serif; padding: 25px 20px 0 0; overflow: hidden;}
+.headerInner #gnb ul li {float: left;}
+.headerInner #gnb ul li a {display: block; color: #fff; font-size: 35px; padding: 10px; position: relative;}
+.headerInner #gnb ul li a::before {content: ''; width: 29px; height: 48px; 
+    background: url(../images/bubble.png) no-repeat; position: absolute; top: -20px; right: -10px; 
+    opacity: 0; transition: all .2s ease-out;}
+.headerInner #gnb ul li:hover a::before {opacity: 1;}
+
+
+/* 푸터 공통 영역 */
+#footerArea {width: 100%; background: #444343; text-align: center; padding: 50px 0; position: relative;}
+#footerArea::before {content: ''; width: 110px; height: 55px; background: #444343; 
+    border-radius: 55px 55px 0 0 ;
+    position: absolute; left: 50%; transform: translateX(-50%); top: -55px;}
+#footerArea .topMove {display: block; width: 97px; height: 64px; font-family: 'Paytone One', sans-serif;
+    background: url(../images/top_1600.png) center top no-repeat;  font-size: 30px; padding-top: 10px;
+    position: absolute; left: 50%; transform: translateX(-50%); top: -44px; z-index: 10;}
+#footerArea img {width: 182px; height: 64px; padding-bottom: 50px;}
+#footerArea p {font-size: 18px; color: #fff;}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	/* 헤더 공통 영역 */
+    .headerInner #gnb ul {padding-right: 0;}
+    .headerInner #gnb ul li a {font-size: 26px; padding: 10px;}
+    .headerInner #gnb ul li a:last-child {padding-right: 0;}
+    .headerInner #gnb ul li a::before {display: none;}
+
+    /* 푸터 공통 영역 */
+    #footerArea .topMove {font-size: 20px; padding-top: 10px;}
+    #footerArea p {font-size: 16px; color: #fff;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	/* 헤더 공통 영역 */
+    #headerArea {height: 60px;}
+    .headerInner {width: 95%; margin: 0 0 0 5%;}
+    .headerInner h1 a {width: 88px; height: 31px; background: url(../images/logo_768.png) no-repeat; }
+    
+    .headerInner .menu_open {display: block; padding: 0 5%}
+
+    .headerInner #gnb {float: none; position: relative;}
+    .headerInner #gnb ul {padding: 0; width: 40%; position:absolute; right: -100%; top: 60px; z-index: 100; 
+        background: rgba(0,0,0,.85); opacity:0;}
+    .headerInner #gnb ul li {float: none; width:auto}
+    .headerInner #gnb ul li a {padding: 20px 50px 20px 30px; font-size: 20px;}
+    .headerInner #gnb ul li a:last-child {padding-right: 50px;}
+    /* .headerInner #gnb ul li a::before {content: ''; width: 29px; height: 48px; 
+        background: url(../images/bubble.png) no-repeat; position: absolute; top: -20px; right: -10px; 
+        opacity: 0; transition: all .2s ease-out;}
+    .headerInner #gnb ul li:hover a::before {opacity: 1;} */
+    
+    /* 푸터 공통 영역 */
+    #footerArea {padding: 25px 0;}
+    #footerArea::before {width: 80px; height: 40px; border-radius: 40px 40px 0 0 ; top: -39px;}
+    #footerArea .topMove {color: #333;}
+    #footerArea .topMove {width: 47px; height: 32px; top: -36px;
+        background: url(../images/top_768.png) no-repeat; background-position-y: 8px;}
+    #footerArea img {display: none;}
+    #footerArea p {font-size: 16px; color: #fff; padding: 1rem;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	.headerInner #gnb ul {width: 60%;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:375px; }
+}
