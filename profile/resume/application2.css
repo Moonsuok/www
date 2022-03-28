@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* reset css */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+body {font-family: 'Noto Sans KR', sans-serif;font-size: 16px; color: #333;min-width: 1200px}
+ol, ul {list-style: none}
+table {border-collapse: collapse; border-spacing: 0}
+address {font-style: normal}
+a {color: #333; text-decoration: none}
+img {border: 0; vertical-align: top}
+h1,h2,h3,h4,h5,h6 {font-family: 'TmoneyRoundWindExtraBold', sans-serif;}
+textarea {font-family: 'Noto Sans KR', sans-serif;}
+.hidden {display: block;  position: absolute; left: -1000%; width: 1px; height: 1px;
+    overflow: hidden; color: #fff}
+
+::selection {color: #fff; background: #25a022;}
+.clearfix::after {display: block; clear: both; content:"";}
+
+
+/* PC */
+#wrap {width: 100%; position: absolute;}
+#wrap .wrap_inner {width: 100%; display: flex;}
+h2 {font-size: 28px; padding-bottom: 30px; border-bottom: 1px solid #666;}
+h2 .tab {float: right; padding-top: 10px; }
+h2 .tab i {font-size: 28px; color: #333;}
+
+/* intro */
+.intro {width: 20%; padding: 3%; background-color:mistyrose;}
+.intro .photo {width: 80%; margin: 0 10% 30px;}
+.intro .photo img {width: 100%; border-radius: 120px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);}
+.intro .name {text-align: center; margin: 30px 0 50px;}
+.intro .name dt {font-size: 36px; font-weight: 700;}
+.intro .name dd {font-size: 18px; margin-top: 1rem;}
+
+.intro .contact {border-top: 1px solid #555; padding-top: 50px;}
+.intro .contact dl {margin-bottom: 30px;}
+.intro .contact dl dd {font-weight: 700; font-size: 18px; margin-top: .5rem;}
+
+/*content*/
+.content {width: 68%; padding: 3%;}
+.content a {font-size: 14px; color: crimson;}
+.content a:hover {text-decoration: underline;}
+.content section {margin-bottom: 100px;}
+
+.content .part ul {overflow: hidden;}
+.content .part ul li:first-child {float: left;}
+.content .part ul li:last-child {float: right;}
+
+.content .comm ul li {padding: 30px 0; border-bottom: 1px solid #ccc;}
+.content .comm ul li dl {display: flex; width: 96%; padding: 0 2%;}
+.content .comm ul li dl dt {width: 20%; padding-right: 5%;}
+.content .comm ul li dl dd {width: 75%; line-height: 2rem;}
+.content .comm ul li dl dd strong {display: block; font-size: 18px;}
+.content .comm ul li dl dd span {display: block;}
+
+.content .portfolio ul li {padding: 30px 0; border-bottom: 1px solid #ccc; 
+    display: flex; align-items: center;}
+.content .portfolio ul li .link {width: 25%; margin-right: 5%; text-align: center;}
+.content .portfolio ul li .link a {display: block;}
+.content .portfolio ul li .link img {width: 80%; margin: 0 auto;}
+.content .portfolio ul li dl {width: 65%; padding-right: 5%;}
+.content .portfolio ul li dl dt strong {font-size: 18px;}
+.content .portfolio ul li dl dt span {display: inline-block; color: #999; 
+    font-size: 14px; margin-left: 10px;}
+.content .portfolio ul li dl dd {line-height: 2rem; margin-top: 0.5rem;}
+
+
+.content .competence ul li {padding: 30px 2%; border-bottom: 1px solid #ccc; }
+.content .competence ul li dl {display: flex; align-items: center;}
+.content .competence ul li dl dt {width: 20%; margin-right: 5%;}
+.content .competence ul li dl dt strong {font-size: 18px;}
+.content .competence ul li dl dt span {display: block; font-size: 14px; color: #999;}
+.content .competence ul li dl dd {width: 75%; line-height: 2rem;}
+
+/*intro_wrap*/
+.intro_wrap {width: 80%; padding: 60px 10% 30px; border-top: 1px solid #ccc; display: none;}
+.intro_wrap h2 {text-align: center;}
+.intro_wrap ul li {padding: 30px 0; border-bottom: 1px solid #ccc;}
+.intro_wrap ul li dl dt {font-size: 20px; margin-bottom: 20px;}
+.intro_wrap ul li dl dd strong {font-size: 22px; display: block; margin: 10px;}
+.intro_wrap ul li dl dd {font-size: 16px; line-height: 2rem;}
+
+.signature {text-align: right; padding: 5%; display: none;}
+.top {position: fixed; bottom: 2%; right: 2%;}
+.top .topMove {font-size: 40px; color: crimson; display: block;}
+.top .topMove i {transition: all .2s;}
+.top:hover .topMove i {transform: rotate(360deg)}
+
+
+/* 일반pc */
+@media screen and (max-width:1280px) {
+    #wrap {width: auto;}
+}
+
+/* Tablet */
+@media screen and (max-width:1024px) {
+    #wrap .wrap_inner {flex-wrap: wrap;}
+    .intro {width: 100%;}
+    .intro {width: 100%; overflow: hidden; padding: 10% 5%;}
+    .intro .photo {float: left; width: 40%; margin: 0 0 30px;}
+    .intro .name {margin: 30px 0 0 50%;}
+    .intro .contact {margin: 30px 0 0 50%; padding-top: 30px;}
+    .intro .contact dl {margin-bottom: 15px;}
+
+    .content {width: 100%;}
+    .content .part {margin-top: 30px;}
+}
+
+/* Mini Tablet */
+@media screen and (max-width:768px) {
+    .intro .photo {width: 40%; margin: 0 auto 30px; float: none;}
+    .intro .name {margin: 0 0 30px 0; text-align: center;}
+    .intro .contact {margin: 0; text-align: center;}
+    .intro .contact dl dt {display: inline-block; margin-right: 10px;}
+    .intro .contact dl dd {display: inline-block;}
+
+    .content .comm ul li dl dt {width: 25%;}
+    .content .comm ul li dl dd {width: 70%;}
+
+    .content .portfolio ul li .link {width: 30%;}
+    .content .portfolio ul li .link a {font-size: 12px;}
+    .content .portfolio ul li .link img {width: 80%;}
+    .content .portfolio ul li dl {width: 60%;}
+}
+
+/* Mobile */
+@media screen and (max-width:640px) {
+    .content .comm ul li {padding: 30px 0; border-bottom: 1px solid #ccc;}
+    .content .comm ul li dl {flex-direction: column-reverse;}
+    .content .comm ul li dl dt {width: 100%; padding-right: 0;}
+    .content .comm ul li dl dd {width: 100%;}
+
+    .content .portfolio ul li {flex-direction: column;}
+    .content .portfolio ul li .link {margin-bottom: 30px; margin-right: 0; width: 100%;}
+    .content .portfolio ul li .link img {width: 30%; display: block;}
+    .content .portfolio ul li dl {width: 90%; padding: 0 5%; text-align: center;}
+
+    .content .competence ul li dl {flex-direction: column;}
+    .content .competence ul li dl dt {width: 100%; margin-right: 0;}
+    .content .competence ul li dl dt span {display: inline-block; margin-left: 10px;}
+    .content .competence ul li dl dd {width: 100%; margin-top: .5rem;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:375px; }
+}
