@@ -14,6 +14,7 @@ $(document).ready(function () {
     $('.select .arrow').on('blur', function () { 
         $(this).css('color','#333');
     });
+    
     $('.select .aList a').on('focus', function () { 
         $(this).css('color','#fff').css('background','#999');
     });
