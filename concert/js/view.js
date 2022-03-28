@@ -1,17 +1,14 @@
-
-
 $(document).ready(function(){
-    //$('#content').addClass('album');
+    $('#content').addClass('album');
 
     $('.view1').click(function(e){
         e.preventDefault();
-        $('#content').removeClass();
         $('#content').addClass('album');
-        
+        $('#content').removeClass('list');
     });
     $('.view2').click(function(e){
         e.preventDefault();
-        $('#content').removeClass();
         $('#content').addClass('list');
+        $('#content').removeClass('album');
     });
 });

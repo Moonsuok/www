@@ -71,9 +71,9 @@
     </div>
 	<div class="sub_menu">
         <ul>
-            <li><a href="./sub6_1.html">제품문의</a></li>
-            <li><a href="./greet/list.php">공지사항</a></li>
-            <li><a href="./sub6_3.html">오시는길</a></li>
+            <li><a href="../sub6/sub6_1.html">제품문의</a></li>
+            <li><a href="../greet/list.php">공지사항</a></li>
+            <li><a href="../sub6/sub6_3.html">오시는길</a></li>
             <li class="current"><a href="./list.php">자료실</a></li>
         </ul>
     </div>

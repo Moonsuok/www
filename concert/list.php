@@ -81,9 +81,9 @@
 <div class="sub_menu">
 	<ul>
 		<li class="current"><a href="./list.php">금호뉴스</a></li>
-		<li><a href="./sub4_2.html">금호사진</a></li>
-		<li><a href="./sub4_3.html">금호영상</a></li>
-		<li><a href="./sub4_4.html">지면광고</a></li>
+		<li><a href="../sub4/sub4_2.html">금호사진</a></li>
+		<li><a href="../sub4/sub4_3.html">금호영상</a></li>
+		<li><a href="../sub4/sub4_4.html">지면광고</a></li>
 	</ul>
 </div>
 <article id="content" class="<?=$list?>">
