@@ -56,6 +56,7 @@ h2 .tab i {font-size: 28px; color: #333;}
 .content a {font-size: 14px; color: crimson;}
 .content a:hover {text-decoration: underline;}
 .content section {margin-bottom: 100px;}
+.content section:last-of-type {margin-bottom: 0;}
 
 .content .part ul {overflow: hidden;}
 .content .part ul li:first-child {float: left;}
@@ -95,8 +96,8 @@ h2 .tab i {font-size: 28px; color: #333;}
 .intro_wrap ul li dl dd strong {font-size: 22px; display: block; margin: 10px;}
 .intro_wrap ul li dl dd {font-size: 16px; line-height: 2rem;}
 
-.signature {text-align: right; padding: 5%; display: none;}
-.top {position: fixed; bottom: 2%; right: 2%;}
+.signature {text-align: right;}
+.top {position: fixed; bottom: 8px; right: 12px;}
 .top .topMove {font-size: 40px; color: crimson; display: block;}
 .top .topMove i {transition: all .2s;}
 .top:hover .topMove i {transform: rotate(360deg)}
@@ -123,6 +124,7 @@ h2 .tab i {font-size: 28px; color: #333;}
 
 /* Mini Tablet */
 @media screen and (max-width:768px) {
+    .content .part ul li {font-size: 14px;}
     .intro .photo {width: 40%; margin: 0 auto 30px; float: none;}
     .intro .name {margin: 0 0 30px 0; text-align: center;}
     .intro .contact {margin: 0; text-align: center;}
@@ -140,6 +142,7 @@ h2 .tab i {font-size: 28px; color: #333;}
 
 /* Mobile */
 @media screen and (max-width:640px) {
+    h2 {font-size: 22px;}
     .content .comm ul li {padding: 30px 0; border-bottom: 1px solid #ccc;}
     .content .comm ul li dl {flex-direction: column-reverse;}
     .content .comm ul li dl dt {width: 100%; padding-right: 0;}
