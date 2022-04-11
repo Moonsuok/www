@@ -103,6 +103,9 @@ h1{
     border-bottom: 1px solid #333;
     overflow: hidden;
 }
+.items:last-child{
+    border-bottom: none;
+}
 .no-bd-bottom{
     border-bottom: 0;
 }
@@ -177,6 +180,7 @@ h2{
 }
 .education .items dd:first-of-type{
     width: 45%;
+    height: 68.33px;
 }
 .education .items dd:nth-of-type(2){
     width: 20%;

@@ -89,8 +89,7 @@ h2 .tab i {font-size: 28px; color: #333;}
 .content .competence ul li dl dd {width: 75%; line-height: 2rem;}
 
 /*intro_wrap*/
-.intro_wrap {width: 80%; padding: 60px 10% 30px; border-top: 1px solid #ccc; display: none;}
-.intro_wrap h2 {text-align: center;}
+.intro_wrap {margin: 60px 0 30px;}
 .intro_wrap ul li {padding: 30px 0; border-bottom: 1px solid #ccc;}
 .intro_wrap ul li dl dt {font-size: 20px; margin-bottom: 20px;}
 .intro_wrap ul li dl dd strong {font-size: 22px; display: block; margin: 10px;}
