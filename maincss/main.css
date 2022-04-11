@@ -120,9 +120,6 @@
 .product_con li dd a:hover {border: 1px solid #fff; color: #fff; font-weight: 700;}
 
 /*경영*/
-/* .management {width: 1200px; height: 600px; background: url(../images/management_bg.jpg) center no-repeat; 
-    text-align: center; box-sizing: border-box; padding: 130px 50px; 
-    position: relative; left: 1200px; opacity: .3; transition: all 1s ease-out;} */
 .management {width: 1200px; height: 600px; opacity: 0;
     text-align: center; box-sizing: border-box; padding: 130px 0; 
     position: relative; left: 1200px; transition: all 1s ease-out;}
@@ -190,14 +187,14 @@
     background-attachment: fixed; top: 0; left: 50%; margin-left: -400px; background-size: cover;
     margin-bottom: 130px; opacity: 0; transition: all 2s ease;}
 .recruit_inner {width: 1200px; padding: 130px 50px; box-sizing: border-box; overflow: hidden;
-    margin: 0 auto; }
+    margin: 0 auto;}
 .recruit_text {font-family: 'Noto Sans KR', sans-serif; float: left; color: #e8e8e8; margin-top: 64px;}
 .recruit_text h3 {font-size: 3em; font-weight: 700;}
 .recruit_text p {font-size: 1.625em; font-weight: 400; line-height: 2em; margin-top: 1em;}
 .recruit_text p span {display: block;}
 .recruit ul {float: right;}
 .recruit ul li {border: 1px solid #e8e8e8; width: 400px; height: 146px; 
-    overflow: hidden; opacity: .5; position: relative;}
+    overflow: hidden; opacity: .8; position: relative;}
 .recruit ul li:hover {opacity: 1;}
 .recruit ul li:first-of-type {margin-bottom: 20px;}
 .recruit ul li:first-of-type::before {content: ''; display: block; width: 14px; height: 14px; 
@@ -209,10 +206,10 @@
 .recruit ul li:last-of-type:hover::before {background: #ed1c24; box-shadow: 0 0 5px #ed1c24; 
     transition: all .3s ease;}
 .recruit a {display: block; margin: 70px 0 0 34px; color: #e4e4e4; 
-    font-family: 'Noto Sans KR', sans-serif; font-size: 1.625em; font-weight: 400; float: left; opacity: .5;}
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1.625em; font-weight: 400; float: left;}
 .recruit li a span {font-size: 1.25em; font-weight: 700;}
-.recruit li img {display: block; margin: 25px 0 0 30px; float: right; opacity: .5;}
-.recruit ul li:hover a, img {opacity: 1;}
+.recruit li img {display: block; margin: 25px 0 0 30px; float: right;}
+.recruit ul li:hover a, .recruit ul li:hover img {color: #fff;}
 
 /* scroll animation 최종값(목적지)  */
 #content div.boxMove {top: 0; opacity: 1;}
